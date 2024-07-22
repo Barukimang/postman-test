@@ -143,64 +143,53 @@
 								{
 									"key": "page",
 									"value": "<number>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "pageSize",
 									"value": "<number>",
 									"description": "any property returned by the data object",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "order",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "sort",
 									"value": "<string>",
-									"description": "let's see whether this will commit to github :)",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "startDateProp",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "endDateProp",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "startDate",
 									"value": "<Date | timestamp>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "endDate",
 									"value": "<Date | timestamp>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "network",
 									"value": "<Network>",
 									"description": "ExtraParams:\nethereum-mainnet | ethereum-sepolia | polygon-mainnet | base-mainnet | arbitrum-mainnet",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "address",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
