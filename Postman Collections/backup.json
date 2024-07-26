@@ -1846,12 +1846,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/votes",
+							"raw": "{{host}}/proposals?daoInfo=true",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
-								"votes"
+								"proposals"
 							],
 							"query": [
 								{
@@ -1949,6 +1949,10 @@
 									"value": "<number>",
 									"type": "text",
 									"disabled": true
+								},
+								{
+									"key": "daoInfo",
+									"value": "true"
 								}
 							]
 						}
