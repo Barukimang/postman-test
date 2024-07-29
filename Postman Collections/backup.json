@@ -519,6 +519,19 @@
 							"body": "{\n    \"id\": \"ethereum-sepolia-0x452d22f3324C239325dE422710d41B909642365b\",\n    \"network\": \"ethereum-sepolia\",\n    \"transactionHash\": \"0xd7f0f55f3d2a5acefbc3179b069b5b2214e7bbf6eb73388ef3b01c17ba4becbd\",\n    \"blockNumber\": 6140718,\n    \"blockTimestamp\": 1718803716,\n    \"address\": \"0x452d22f3324C239325dE422710d41B909642365b\",\n    \"implementationAddress\": \"0x2C9c5e8F559DBBEc962f7CCd295DBc4183cd2168\",\n    \"creatorAddress\": \"0xaF7E68bCb2Fc7295492A00177f14F59B92814e70\",\n    \"ens\": null,\n    \"subdomain\": null,\n    \"metadataIpfs\": null,\n    \"name\": \"OpenR&D Demo\",\n    \"description\": \"Showcase how OpenR&D can be used with Aragon App.\",\n    \"avatar\": null,\n    \"links\": [\n        {\n            \"name\": \"OpenR&D\",\n            \"url\": \"https://openrd.openmesh.network/\"\n        }\n    ],\n    \"plugins\": [\n        {\n            \"transactionHash\": \"0xd7f0f55f3d2a5acefbc3179b069b5b2214e7bbf6eb73388ef3b01c17ba4becbd\",\n            \"blockNumber\": 6140718,\n            \"address\": \"0x62a01A3FD2b0f65B8C25C8CaF4B2e3F560367481\",\n            \"implementationAddress\": \"0x3225bb58d6e483B0A2E91265c2b679005F578812\",\n            \"tokenAddress\": null,\n            \"pluginSetupRepoAddress\": \"0x9e7956C8758470dE159481e5DD0d08F8B59217A2\",\n            \"release\": \"1\",\n            \"build\": \"2\",\n            \"subdomain\": \"multisig\"\n        }\n    ],\n    \"tvlUSD\": 0,\n    \"metrics\": {\n        \"proposalsCreated\": 1,\n        \"proposalsExecuted\": 1,\n        \"uniqueVoters\": 1,\n        \"votes\": 1,\n        \"members\": 0\n    }\n}"
 						}
 					]
+				},
+				{
+					"name": "Daos By Member",
+					"id": "16bd0fdc-3634-4c76-9c5a-95dbc934d35b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host}}/daos/member/0x26750470f82Ba05892fb0088ebE48b1E19d30514"
+					},
+					"response": []
 				}
 			],
 			"id": "d8c48fad-76bc-4368-80eb-7b3049fe4938",
@@ -1846,7 +1859,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/proposals?daoInfo=true",
+							"raw": "{{host}}/proposals?includeInfo=true",
 							"host": [
 								"{{host}}"
 							],
@@ -1857,13 +1870,11 @@
 								{
 									"key": "search",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "page",
 									"value": "<number>",
-									"type": "text",
 									"disabled": true
 								},
 								{
@@ -1874,84 +1885,71 @@
 								{
 									"key": "order",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "sort",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "startDateProp",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "endDateProp",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "startDate",
 									"value": "<Date | timestamp>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "endDate",
 									"value": "<Date | timestamp>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "network",
 									"value": "<Network>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "address",
 									"value": "<string>",
 									"description": "memberAddress",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "daoAddress",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "tokenAddress",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "pluginAddress",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "daoId",
 									"value": "<daoId>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "proposalId",
 									"value": "<number>",
-									"type": "text",
 									"disabled": true
 								},
 								{
-									"key": "daoInfo",
+									"key": "includeInfo",
 									"value": "true"
 								}
 							]
@@ -2274,7 +2272,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/proposals",
+							"raw": "{{host}}/proposals?daoInfo=true",
 							"host": [
 								"{{host}}"
 							],
@@ -2285,7 +2283,6 @@
 								{
 									"key": "search",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
@@ -2301,68 +2298,61 @@
 								{
 									"key": "order",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "sort",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "startDateProp",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "endDateProp",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "startDate",
 									"value": "<Date | timestamp>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "endDate",
 									"value": "<Date | timestamp>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "network",
 									"value": "<Network>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "daoAddress",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "pluginAddress",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "creatorAddress",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "daoId",
 									"value": "<daoId>",
-									"type": "text",
 									"disabled": true
+								},
+								{
+									"key": "daoInfo",
+									"value": "true"
 								}
 							]
 						}
