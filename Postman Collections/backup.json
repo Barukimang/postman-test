@@ -1859,12 +1859,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/proposals?proposalId=<string>&includeInfo=true",
+							"raw": "{{host}}/votes?proposalId=<string>&includeInfo=true",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
-								"proposals"
+								"votes"
 							],
 							"query": [
 								{
