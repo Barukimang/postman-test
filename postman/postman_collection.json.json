@@ -530,7 +530,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{host}}/daos/member/0x26750470f82Ba05892fb0088ebE48b1E19d30514"
+						"url": "{{host}}/daos/member/0x8bF1e340055c7dE62F11229A149d3A1918de3d74"
 					},
 					"response": []
 				}
