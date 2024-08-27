@@ -522,7 +522,7 @@
 					]
 				},
 				{
-					"name": "Daos By Member",
+					"name": "get daos by member",
 					"id": "16bd0fdc-3634-4c76-9c5a-95dbc934d35b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
