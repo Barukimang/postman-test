@@ -2201,7 +2201,161 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "9331527b-f730-44ff-854f-67371852d8ac",
+							"name": "get proposals",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/proposals?daoInfo=true",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"proposals"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "<number>",
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": "<number>",
+											"disabled": true
+										},
+										{
+											"key": "order",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "startDateProp",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "endDateProp",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "startDate",
+											"value": "<Date | timestamp>",
+											"disabled": true
+										},
+										{
+											"key": "endDate",
+											"value": "<Date | timestamp>",
+											"disabled": true
+										},
+										{
+											"key": "network",
+											"value": "<Network>",
+											"disabled": true
+										},
+										{
+											"key": "daoAddress",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "pluginAddress",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "creatorAddress",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "daoId",
+											"value": "<daoId>",
+											"disabled": true
+										},
+										{
+											"key": "daoInfo",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Correlation-Id",
+									"value": "38d52171-675e-4123-9a67-8c96e48414d0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self' https:"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=2592000; includeSubDomains"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "19423"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Sep 2024 13:35:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"metadata\": {\n        \"page\": 1,\n        \"pageSize\": 10,\n        \"totalPages\": 135,\n        \"totalRecords\": 1347\n    },\n    \"data\": [\n        {\n            \"id\": \"0x6e176466714212dd2e271b9073cfd049bc97952f88957c2dfa2faa2a8d55aa47-0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407-36\",\n            \"transactionHash\": \"0x6e176466714212dd2e271b9073cfd049bc97952f88957c2dfa2faa2a8d55aa47\",\n            \"blockNumber\": 6617428,\n            \"blockTimestamp\": 1725260928,\n            \"network\": \"ethereum-sepolia\",\n            \"pluginAddress\": \"0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407\",\n            \"pluginSubdomain\": \"multisig\",\n            \"daoAddress\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n            \"proposalIndex\": 36,\n            \"startDate\": 1725260928,\n            \"endDate\": 1725692880,\n            \"metadataUri\": \"ipfs://bafkreid75yfeitnbbqytgm4r2s6ag62qze4codm3amsf6mgnv5o7sdlz3e\",\n            \"title\": \"Withdraw funds\",\n            \"description\": null,\n            \"summary\": \"Withdraw funds\",\n            \"resources\": [],\n            \"executed\": {\n                \"status\": true,\n                \"transactionHash\": null,\n                \"blockNumber\": 6617430,\n                \"blockTimestamp\": 1725260952\n            },\n            \"actions\": [\n                {\n                    \"inputData\": {\n                        \"function\": \"transfer\",\n                        \"contract\": \"ERC20\",\n                        \"parameters\": [\n                            {\n                                \"name\": \"to\",\n                                \"type\": \"address\",\n                                \"value\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                                \"notice\": null\n                            },\n                            {\n                                \"name\": \"amount\",\n                                \"type\": \"uint256\",\n                                \"value\": \"1636320000000000\",\n                                \"notice\": null\n                            }\n                        ],\n                        \"notice\": null,\n                        \"textSignature\": \"transfer(address,uint256)\"\n                    },\n                    \"type\": \"Transfer\",\n                    \"sender\": {\n                        \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\"\n                    },\n                    \"receiver\": {\n                        \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\"\n                    },\n                    \"amount\": \"1636320000000000\",\n                    \"token\": {\n                        \"address\": \"0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14\",\n                        \"name\": \"Wrapped Ether\",\n                        \"symbol\": \"WETH\",\n                        \"decimals\": 18,\n                        \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfff9976782d46cc05630d1f6ebab18b2324d6b14.png\",\n                        \"type\": \"ERC20\",\n                        \"priceUsd\": \"0\"\n                    }\n                }\n            ],\n            \"media\": {\n                \"header\": null,\n                \"logo\": null\n            },\n            \"metrics\": {\n                \"totalVotes\": 1,\n                \"missingVotes\": 0,\n                \"votesByOption\": []\n            },\n            \"creator\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"dao\": [\n                {\n                    \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n                    \"name\": \"Multisig DAO\",\n                    \"description\": \"DAO generated by automated E2E tests\",\n                    \"avatar\": null,\n                    \"links\": []\n                }\n            ],\n            \"settings\": {\n                \"onlyListed\": true,\n                \"minApprovals\": 1,\n                \"membersCount\": 1\n            }\n        },\n        {\n            \"id\": \"0xfdfa12ee6527fd11b5de6e38a253c62a060bee9420d0db1b33b08a3c026b9dcf-0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407-35\",\n            \"transactionHash\": \"0xfdfa12ee6527fd11b5de6e38a253c62a060bee9420d0db1b33b08a3c026b9dcf\",\n            \"blockNumber\": 6617245,\n            \"blockTimestamp\": 1725258456,\n            \"network\": \"ethereum-sepolia\",\n            \"pluginAddress\": \"0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407\",\n            \"pluginSubdomain\": \"multisig\",\n            \"daoAddress\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n            \"proposalIndex\": 35,\n            \"startDate\": 1725258456,\n            \"endDate\": 1725690420,\n            \"metadataUri\": \"ipfs://bafkreid75yfeitnbbqytgm4r2s6ag62qze4codm3amsf6mgnv5o7sdlz3e\",\n            \"title\": \"Withdraw funds\",\n            \"description\": null,\n            \"summary\": \"Withdraw funds\",\n            \"resources\": [],\n            \"executed\": {\n                \"status\": true,\n                \"transactionHash\": null,\n                \"blockNumber\": 6617247,\n                \"blockTimestamp\": 1725258480\n            },\n            \"actions\": [\n                {\n                    \"inputData\": {\n                        \"function\": \"transfer\",\n                        \"contract\": \"ERC20\",\n                        \"parameters\": [\n                            {\n                                \"name\": \"to\",\n                                \"type\": \"address\",\n                                \"value\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                                \"notice\": null\n                            },\n                            {\n                                \"name\": \"amount\",\n                                \"type\": \"uint256\",\n                                \"value\": \"1636320000000000\",\n                                \"notice\": null\n                            }\n                        ],\n                        \"notice\": null,\n                        \"textSignature\": \"transfer(address,uint256)\"\n                    },\n                    \"type\": \"Transfer\",\n                    \"sender\": {\n                        \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\"\n                    },\n                    \"receiver\": {\n                        \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\"\n                    },\n                    \"amount\": \"1636320000000000\",\n                    \"token\": {\n                        \"address\": \"0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14\",\n                        \"name\": \"Wrapped Ether\",\n                        \"symbol\": \"WETH\",\n                        \"decimals\": 18,\n                        \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfff9976782d46cc05630d1f6ebab18b2324d6b14.png\",\n                        \"type\": \"ERC20\",\n                        \"priceUsd\": \"0\"\n                    }\n                }\n            ],\n            \"media\": {\n                \"header\": null,\n                \"logo\": null\n            },\n            \"metrics\": {\n                \"totalVotes\": 1,\n                \"missingVotes\": 0,\n                \"votesByOption\": []\n            },\n            \"creator\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"dao\": [\n                {\n                    \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n                    \"name\": \"Multisig DAO\",\n                    \"description\": \"DAO generated by automated E2E tests\",\n                    \"avatar\": null,\n                    \"links\": []\n                }\n            ],\n            \"settings\": {\n                \"onlyListed\": true,\n                \"minApprovals\": 1,\n                \"membersCount\": 1\n            }\n        },\n        {\n            \"id\": \"0x25ad39ee9aa1b2873d9a0de367665d214274d7cfd9cf587ad92061dd04fcd61f-0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407-34\",\n            \"transactionHash\": \"0x25ad39ee9aa1b2873d9a0de367665d214274d7cfd9cf587ad92061dd04fcd61f\",\n            \"blockNumber\": 6573518,\n            \"blockTimestamp\": 1724657184,\n            \"network\": \"ethereum-sepolia\",\n            \"pluginAddress\": \"0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407\",\n            \"pluginSubdomain\": \"multisig\",\n            \"daoAddress\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n            \"proposalIndex\": 34,\n            \"startDate\": 1724657184,\n            \"endDate\": 1725089160,\n            \"metadataUri\": \"ipfs://bafkreid75yfeitnbbqytgm4r2s6ag62qze4codm3amsf6mgnv5o7sdlz3e\",\n            \"title\": \"Withdraw funds\",\n            \"description\": null,\n            \"summary\": \"Withdraw funds\",\n            \"resources\": [],\n            \"executed\": {\n                \"status\": true,\n                \"transactionHash\": null,\n                \"blockNumber\": 6573520,\n                \"blockTimestamp\": 1724657220\n            },\n            \"actions\": [\n                {\n                    \"inputData\": {\n                        \"function\": \"transfer\",\n                        \"contract\": \"ERC20\",\n                        \"parameters\": [\n                            {\n                                \"name\": \"to\",\n                                \"type\": \"address\",\n                                \"value\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                                \"notice\": null\n                            },\n                            {\n                                \"name\": \"amount\",\n                                \"type\": \"uint256\",\n                                \"value\": \"1636320000000000\",\n                                \"notice\": null\n                            }\n                        ],\n                        \"notice\": null,\n                        \"textSignature\": \"transfer(address,uint256)\"\n                    },\n                    \"type\": \"Transfer\",\n                    \"sender\": {\n                        \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\"\n                    },\n                    \"receiver\": {\n                        \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\"\n                    },\n                    \"amount\": \"1636320000000000\",\n                    \"token\": {\n                        \"address\": \"0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14\",\n                        \"name\": \"Wrapped Ether\",\n                        \"symbol\": \"WETH\",\n                        \"decimals\": 18,\n                        \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfff9976782d46cc05630d1f6ebab18b2324d6b14.png\",\n                        \"type\": \"ERC20\",\n                        \"priceUsd\": \"0\"\n                    }\n                }\n            ],\n            \"media\": {\n                \"header\": null,\n                \"logo\": null\n            },\n            \"metrics\": {\n                \"totalVotes\": 1,\n                \"missingVotes\": 0,\n                \"votesByOption\": []\n            },\n            \"creator\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"dao\": [\n                {\n                    \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n                    \"name\": \"Multisig DAO\",\n                    \"description\": \"DAO generated by automated E2E tests\",\n                    \"avatar\": null,\n                    \"links\": []\n                }\n            ],\n            \"settings\": {\n                \"onlyListed\": true,\n                \"minApprovals\": 1,\n                \"membersCount\": 1\n            }\n        },\n        {\n            \"id\": \"0xd178623cb4af4512cd9c96ca834c476765cadf64d82bf811be166ea785483a97-0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407-33\",\n            \"transactionHash\": \"0xd178623cb4af4512cd9c96ca834c476765cadf64d82bf811be166ea785483a97\",\n            \"blockNumber\": 6485124,\n            \"blockTimestamp\": 1723455900,\n            \"network\": \"ethereum-sepolia\",\n            \"pluginAddress\": \"0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407\",\n            \"pluginSubdomain\": \"multisig\",\n            \"daoAddress\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n            \"proposalIndex\": 33,\n            \"startDate\": 1723455900,\n            \"endDate\": 1723887840,\n            \"metadataUri\": \"ipfs://bafkreid75yfeitnbbqytgm4r2s6ag62qze4codm3amsf6mgnv5o7sdlz3e\",\n            \"title\": \"Withdraw funds\",\n            \"description\": null,\n            \"summary\": \"Withdraw funds\",\n            \"resources\": [],\n            \"executed\": {\n                \"status\": true,\n                \"transactionHash\": null,\n                \"blockNumber\": 6485126,\n                \"blockTimestamp\": 1723455924\n            },\n            \"actions\": [\n                {\n                    \"inputData\": {\n                        \"function\": \"transfer\",\n                        \"contract\": \"ERC20\",\n                        \"parameters\": [\n                            {\n                                \"name\": \"to\",\n                                \"type\": \"address\",\n                                \"value\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                                \"notice\": null\n                            },\n                            {\n                                \"name\": \"amount\",\n                                \"type\": \"uint256\",\n                                \"value\": \"1636320000000000\",\n                                \"notice\": null\n                            }\n                        ],\n                        \"notice\": null,\n                        \"textSignature\": \"transfer(address,uint256)\"\n                    },\n                    \"type\": \"Transfer\",\n                    \"sender\": {\n                        \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\"\n                    },\n                    \"receiver\": {\n                        \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\"\n                    },\n                    \"amount\": \"1636320000000000\",\n                    \"token\": {\n                        \"address\": \"0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14\",\n                        \"name\": \"Wrapped Ether\",\n                        \"symbol\": \"WETH\",\n                        \"decimals\": 18,\n                        \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfff9976782d46cc05630d1f6ebab18b2324d6b14.png\",\n                        \"type\": \"ERC20\",\n                        \"priceUsd\": \"0\"\n                    }\n                }\n            ],\n            \"media\": {\n                \"header\": null,\n                \"logo\": null\n            },\n            \"metrics\": {\n                \"totalVotes\": 1,\n                \"missingVotes\": 0,\n                \"votesByOption\": []\n            },\n            \"creator\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"dao\": [\n                {\n                    \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n                    \"name\": \"Multisig DAO\",\n                    \"description\": \"DAO generated by automated E2E tests\",\n                    \"avatar\": null,\n                    \"links\": []\n                }\n            ],\n            \"settings\": {\n                \"onlyListed\": true,\n                \"minApprovals\": 1,\n                \"membersCount\": 1\n            }\n        },\n        {\n            \"id\": \"0xe016b5732041db2d56c19390a9ed1c2bd47e952ea26a4c25ac0b57348ebc8115-0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407-32\",\n            \"transactionHash\": \"0xe016b5732041db2d56c19390a9ed1c2bd47e952ea26a4c25ac0b57348ebc8115\",\n            \"blockNumber\": 6485103,\n            \"blockTimestamp\": 1723455624,\n            \"network\": \"ethereum-sepolia\",\n            \"pluginAddress\": \"0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407\",\n            \"pluginSubdomain\": \"multisig\",\n            \"daoAddress\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n            \"proposalIndex\": 32,\n            \"startDate\": 1723455624,\n            \"endDate\": 1723887600,\n            \"metadataUri\": \"ipfs://bafkreid75yfeitnbbqytgm4r2s6ag62qze4codm3amsf6mgnv5o7sdlz3e\",\n            \"title\": \"Withdraw funds\",\n            \"description\": null,\n            \"summary\": \"Withdraw funds\",\n            \"resources\": [],\n            \"executed\": {\n                \"status\": true,\n                \"transactionHash\": null,\n                \"blockNumber\": 6485105,\n                \"blockTimestamp\": 1723455660\n            },\n            \"actions\": [\n                {\n                    \"inputData\": {\n                        \"function\": \"transfer\",\n                        \"contract\": \"ERC20\",\n                        \"parameters\": [\n                            {\n                                \"name\": \"to\",\n                                \"type\": \"address\",\n                                \"value\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                                \"notice\": null\n                            },\n                            {\n                                \"name\": \"amount\",\n                                \"type\": \"uint256\",\n                                \"value\": \"1636320000000000\",\n                                \"notice\": null\n                            }\n                        ],\n                        \"notice\": null,\n                        \"textSignature\": \"transfer(address,uint256)\"\n                    },\n                    \"type\": \"Transfer\",\n                    \"sender\": {\n                        \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\"\n                    },\n                    \"receiver\": {\n                        \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\"\n                    },\n                    \"amount\": \"1636320000000000\",\n                    \"token\": {\n                        \"address\": \"0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14\",\n                        \"name\": \"Wrapped Ether\",\n                        \"symbol\": \"WETH\",\n                        \"decimals\": 18,\n                        \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfff9976782d46cc05630d1f6ebab18b2324d6b14.png\",\n                        \"type\": \"ERC20\",\n                        \"priceUsd\": \"0\"\n                    }\n                }\n            ],\n            \"media\": {\n                \"header\": null,\n                \"logo\": null\n            },\n            \"metrics\": {\n                \"totalVotes\": 1,\n                \"missingVotes\": 0,\n                \"votesByOption\": []\n            },\n            \"creator\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"dao\": [\n                {\n                    \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n                    \"name\": \"Multisig DAO\",\n                    \"description\": \"DAO generated by automated E2E tests\",\n                    \"avatar\": null,\n                    \"links\": []\n                }\n            ],\n            \"settings\": {\n                \"onlyListed\": true,\n                \"minApprovals\": 1,\n                \"membersCount\": 1\n            }\n        },\n        {\n            \"id\": \"0xf28bf93fd8b2404a7ae6dca895f4ce7b956a160e1597a33a5a27647ced5f165d-0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407-31\",\n            \"transactionHash\": \"0xf28bf93fd8b2404a7ae6dca895f4ce7b956a160e1597a33a5a27647ced5f165d\",\n            \"blockNumber\": 6484690,\n            \"blockTimestamp\": 1723450176,\n            \"network\": \"ethereum-sepolia\",\n            \"pluginAddress\": \"0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407\",\n            \"pluginSubdomain\": \"multisig\",\n            \"daoAddress\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n            \"proposalIndex\": 31,\n            \"startDate\": 1723450176,\n            \"endDate\": 1723882140,\n            \"metadataUri\": \"ipfs://bafkreid75yfeitnbbqytgm4r2s6ag62qze4codm3amsf6mgnv5o7sdlz3e\",\n            \"title\": \"Withdraw funds\",\n            \"description\": null,\n            \"summary\": \"Withdraw funds\",\n            \"resources\": [],\n            \"executed\": {\n                \"status\": true,\n                \"transactionHash\": null,\n                \"blockNumber\": 6484692,\n                \"blockTimestamp\": 1723450200\n            },\n            \"actions\": [\n                {\n                    \"inputData\": {\n                        \"function\": \"transfer\",\n                        \"contract\": \"ERC20\",\n                        \"parameters\": [\n                            {\n                                \"name\": \"to\",\n                                \"type\": \"address\",\n                                \"value\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                                \"notice\": null\n                            },\n                            {\n                                \"name\": \"amount\",\n                                \"type\": \"uint256\",\n                                \"value\": \"1636320000000000\",\n                                \"notice\": null\n                            }\n                        ],\n                        \"notice\": null,\n                        \"textSignature\": \"transfer(address,uint256)\"\n                    },\n                    \"type\": \"Transfer\",\n                    \"sender\": {\n                        \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\"\n                    },\n                    \"receiver\": {\n                        \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\"\n                    },\n                    \"amount\": \"1636320000000000\",\n                    \"token\": {\n                        \"address\": \"0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14\",\n                        \"name\": \"Wrapped Ether\",\n                        \"symbol\": \"WETH\",\n                        \"decimals\": 18,\n                        \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfff9976782d46cc05630d1f6ebab18b2324d6b14.png\",\n                        \"type\": \"ERC20\",\n                        \"priceUsd\": \"0\"\n                    }\n                }\n            ],\n            \"media\": {\n                \"header\": null,\n                \"logo\": null\n            },\n            \"metrics\": {\n                \"totalVotes\": 1,\n                \"missingVotes\": 0,\n                \"votesByOption\": []\n            },\n            \"creator\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"dao\": [\n                {\n                    \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n                    \"name\": \"Multisig DAO\",\n                    \"description\": \"DAO generated by automated E2E tests\",\n                    \"avatar\": null,\n                    \"links\": []\n                }\n            ],\n            \"settings\": {\n                \"onlyListed\": true,\n                \"minApprovals\": 1,\n                \"membersCount\": 1\n            }\n        },\n        {\n            \"id\": \"0x1266828302fe29daaaa4211e3181d20d25a48a966d2e87b7f2dfa6388330e7d1-0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407-30\",\n            \"transactionHash\": \"0x1266828302fe29daaaa4211e3181d20d25a48a966d2e87b7f2dfa6388330e7d1\",\n            \"blockNumber\": 6441991,\n            \"blockTimestamp\": 1722865560,\n            \"network\": \"ethereum-sepolia\",\n            \"pluginAddress\": \"0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407\",\n            \"pluginSubdomain\": \"multisig\",\n            \"daoAddress\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n            \"proposalIndex\": 30,\n            \"startDate\": 1722865560,\n            \"endDate\": 1723297500,\n            \"metadataUri\": \"ipfs://bafkreid75yfeitnbbqytgm4r2s6ag62qze4codm3amsf6mgnv5o7sdlz3e\",\n            \"title\": \"Withdraw funds\",\n            \"description\": null,\n            \"summary\": \"Withdraw funds\",\n            \"resources\": [],\n            \"executed\": {\n                \"status\": true,\n                \"transactionHash\": null,\n                \"blockNumber\": 6441993,\n                \"blockTimestamp\": 1722865584\n            },\n            \"actions\": [\n                {\n                    \"inputData\": {\n                        \"function\": \"transfer\",\n                        \"contract\": \"ERC20\",\n                        \"parameters\": [\n                            {\n                                \"name\": \"to\",\n                                \"type\": \"address\",\n                                \"value\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                                \"notice\": null\n                            },\n                            {\n                                \"name\": \"amount\",\n                                \"type\": \"uint256\",\n                                \"value\": \"1636320000000000\",\n                                \"notice\": null\n                            }\n                        ],\n                        \"notice\": null,\n                        \"textSignature\": \"transfer(address,uint256)\"\n                    },\n                    \"type\": \"Transfer\",\n                    \"sender\": {\n                        \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\"\n                    },\n                    \"receiver\": {\n                        \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\"\n                    },\n                    \"amount\": \"1636320000000000\",\n                    \"token\": {\n                        \"address\": \"0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14\",\n                        \"name\": \"Wrapped Ether\",\n                        \"symbol\": \"WETH\",\n                        \"decimals\": 18,\n                        \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfff9976782d46cc05630d1f6ebab18b2324d6b14.png\",\n                        \"type\": \"ERC20\",\n                        \"priceUsd\": \"0\"\n                    }\n                }\n            ],\n            \"media\": {\n                \"header\": null,\n                \"logo\": null\n            },\n            \"metrics\": {\n                \"totalVotes\": 1,\n                \"missingVotes\": 0,\n                \"votesByOption\": []\n            },\n            \"creator\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"dao\": [\n                {\n                    \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n                    \"name\": \"Multisig DAO\",\n                    \"description\": \"DAO generated by automated E2E tests\",\n                    \"avatar\": null,\n                    \"links\": []\n                }\n            ],\n            \"settings\": {\n                \"onlyListed\": true,\n                \"minApprovals\": 1,\n                \"membersCount\": 1\n            }\n        },\n        {\n            \"id\": \"0xb60e2dab77667100565247bd9fd6ea25da4ba85a7b2fada3e9615485aa0f3dae-0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407-29\",\n            \"transactionHash\": \"0xb60e2dab77667100565247bd9fd6ea25da4ba85a7b2fada3e9615485aa0f3dae\",\n            \"blockNumber\": 6441796,\n            \"blockTimestamp\": 1722862872,\n            \"network\": \"ethereum-sepolia\",\n            \"pluginAddress\": \"0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407\",\n            \"pluginSubdomain\": \"multisig\",\n            \"daoAddress\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n            \"proposalIndex\": 29,\n            \"startDate\": 1722862872,\n            \"endDate\": 1723294860,\n            \"metadataUri\": \"ipfs://bafkreid75yfeitnbbqytgm4r2s6ag62qze4codm3amsf6mgnv5o7sdlz3e\",\n            \"title\": \"Withdraw funds\",\n            \"description\": null,\n            \"summary\": \"Withdraw funds\",\n            \"resources\": [],\n            \"executed\": {\n                \"status\": true,\n                \"transactionHash\": null,\n                \"blockNumber\": 6441798,\n                \"blockTimestamp\": 1722862896\n            },\n            \"actions\": [\n                {\n                    \"inputData\": {\n                        \"function\": \"transfer\",\n                        \"contract\": \"ERC20\",\n                        \"parameters\": [\n                            {\n                                \"name\": \"to\",\n                                \"type\": \"address\",\n                                \"value\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                                \"notice\": null\n                            },\n                            {\n                                \"name\": \"amount\",\n                                \"type\": \"uint256\",\n                                \"value\": \"1636320000000000\",\n                                \"notice\": null\n                            }\n                        ],\n                        \"notice\": null,\n                        \"textSignature\": \"transfer(address,uint256)\"\n                    },\n                    \"type\": \"Transfer\",\n                    \"sender\": {\n                        \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\"\n                    },\n                    \"receiver\": {\n                        \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\"\n                    },\n                    \"amount\": \"1636320000000000\",\n                    \"token\": {\n                        \"address\": \"0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14\",\n                        \"name\": \"Wrapped Ether\",\n                        \"symbol\": \"WETH\",\n                        \"decimals\": 18,\n                        \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfff9976782d46cc05630d1f6ebab18b2324d6b14.png\",\n                        \"type\": \"ERC20\",\n                        \"priceUsd\": \"0\"\n                    }\n                }\n            ],\n            \"media\": {\n                \"header\": null,\n                \"logo\": null\n            },\n            \"metrics\": {\n                \"totalVotes\": 1,\n                \"missingVotes\": 0,\n                \"votesByOption\": []\n            },\n            \"creator\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"dao\": [\n                {\n                    \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n                    \"name\": \"Multisig DAO\",\n                    \"description\": \"DAO generated by automated E2E tests\",\n                    \"avatar\": null,\n                    \"links\": []\n                }\n            ],\n            \"settings\": {\n                \"onlyListed\": true,\n                \"minApprovals\": 1,\n                \"membersCount\": 1\n            }\n        },\n        {\n            \"id\": \"0x0f386e0f1f9b51b860fa9336a75dea0a1a13fa02f6db9ba63c6a990f5c065234-0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407-28\",\n            \"transactionHash\": \"0x0f386e0f1f9b51b860fa9336a75dea0a1a13fa02f6db9ba63c6a990f5c065234\",\n            \"blockNumber\": 6397665,\n            \"blockTimestamp\": 1722258648,\n            \"network\": \"ethereum-sepolia\",\n            \"pluginAddress\": \"0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407\",\n            \"pluginSubdomain\": \"multisig\",\n            \"daoAddress\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n            \"proposalIndex\": 28,\n            \"startDate\": 1722258648,\n            \"endDate\": 1722690600,\n            \"metadataUri\": \"ipfs://bafkreid75yfeitnbbqytgm4r2s6ag62qze4codm3amsf6mgnv5o7sdlz3e\",\n            \"title\": \"Withdraw funds\",\n            \"description\": null,\n            \"summary\": \"Withdraw funds\",\n            \"resources\": [],\n            \"executed\": {\n                \"status\": true,\n                \"transactionHash\": null,\n                \"blockNumber\": 6397668,\n                \"blockTimestamp\": 1722258696\n            },\n            \"actions\": [\n                {\n                    \"inputData\": {\n                        \"function\": \"transfer\",\n                        \"contract\": \"ERC20\",\n                        \"parameters\": [\n                            {\n                                \"name\": \"to\",\n                                \"type\": \"address\",\n                                \"value\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                                \"notice\": null\n                            },\n                            {\n                                \"name\": \"amount\",\n                                \"type\": \"uint256\",\n                                \"value\": \"1636320000000000\",\n                                \"notice\": null\n                            }\n                        ],\n                        \"notice\": null,\n                        \"textSignature\": \"transfer(address,uint256)\"\n                    },\n                    \"type\": \"Transfer\",\n                    \"sender\": {\n                        \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\"\n                    },\n                    \"receiver\": {\n                        \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\"\n                    },\n                    \"amount\": \"1636320000000000\",\n                    \"token\": {\n                        \"address\": \"0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14\",\n                        \"name\": \"Wrapped Ether\",\n                        \"symbol\": \"WETH\",\n                        \"decimals\": 18,\n                        \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfff9976782d46cc05630d1f6ebab18b2324d6b14.png\",\n                        \"type\": \"ERC20\",\n                        \"priceUsd\": \"0\"\n                    }\n                }\n            ],\n            \"media\": {\n                \"header\": null,\n                \"logo\": null\n            },\n            \"metrics\": {\n                \"totalVotes\": 1,\n                \"missingVotes\": 0,\n                \"votesByOption\": []\n            },\n            \"creator\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"dao\": [\n                {\n                    \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n                    \"name\": \"Multisig DAO\",\n                    \"description\": \"DAO generated by automated E2E tests\",\n                    \"avatar\": null,\n                    \"links\": []\n                }\n            ],\n            \"settings\": {\n                \"onlyListed\": true,\n                \"minApprovals\": 1,\n                \"membersCount\": 1\n            }\n        },\n        {\n            \"id\": \"0xe8b5ceedc1059fb3b2765976db9d070d8d26c9ff740f3db326ce58bf570a07e5-0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407-27\",\n            \"transactionHash\": \"0xe8b5ceedc1059fb3b2765976db9d070d8d26c9ff740f3db326ce58bf570a07e5\",\n            \"blockNumber\": 6396970,\n            \"blockTimestamp\": 1722249012,\n            \"network\": \"ethereum-sepolia\",\n            \"pluginAddress\": \"0xFF7a0fc56C2Ae550FBA27D5b1c2d0471CB08A407\",\n            \"pluginSubdomain\": \"multisig\",\n            \"daoAddress\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n            \"proposalIndex\": 27,\n            \"startDate\": 1722249012,\n            \"endDate\": 1722680940,\n            \"metadataUri\": \"ipfs://bafkreid75yfeitnbbqytgm4r2s6ag62qze4codm3amsf6mgnv5o7sdlz3e\",\n            \"title\": \"Withdraw funds\",\n            \"description\": null,\n            \"summary\": \"Withdraw funds\",\n            \"resources\": [],\n            \"executed\": {\n                \"status\": true,\n                \"transactionHash\": null,\n                \"blockNumber\": 6396972,\n                \"blockTimestamp\": 1722249060\n            },\n            \"actions\": [\n                {\n                    \"inputData\": {\n                        \"function\": \"transfer\",\n                        \"contract\": \"ERC20\",\n                        \"parameters\": [\n                            {\n                                \"name\": \"to\",\n                                \"type\": \"address\",\n                                \"value\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                                \"notice\": null\n                            },\n                            {\n                                \"name\": \"amount\",\n                                \"type\": \"uint256\",\n                                \"value\": \"1636320000000000\",\n                                \"notice\": null\n                            }\n                        ],\n                        \"notice\": null,\n                        \"textSignature\": \"transfer(address,uint256)\"\n                    },\n                    \"type\": \"Transfer\",\n                    \"sender\": {\n                        \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\"\n                    },\n                    \"receiver\": {\n                        \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\"\n                    },\n                    \"amount\": \"1636320000000000\",\n                    \"token\": {\n                        \"address\": \"0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14\",\n                        \"name\": \"Wrapped Ether\",\n                        \"symbol\": \"WETH\",\n                        \"decimals\": 18,\n                        \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfff9976782d46cc05630d1f6ebab18b2324d6b14.png\",\n                        \"type\": \"ERC20\",\n                        \"priceUsd\": \"0\"\n                    }\n                }\n            ],\n            \"media\": {\n                \"header\": null,\n                \"logo\": null\n            },\n            \"metrics\": {\n                \"totalVotes\": 1,\n                \"missingVotes\": 0,\n                \"votesByOption\": []\n            },\n            \"creator\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"dao\": [\n                {\n                    \"address\": \"0xc477632E39f44e19612611a0113d476f15ef0E84\",\n                    \"name\": \"Multisig DAO\",\n                    \"description\": \"DAO generated by automated E2E tests\",\n                    \"avatar\": null,\n                    \"links\": []\n                }\n            ],\n            \"settings\": {\n                \"onlyListed\": true,\n                \"minApprovals\": 1,\n                \"membersCount\": 1\n            }\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "get proposal by id",
@@ -2214,7 +2368,77 @@
 						"header": [],
 						"url": "{{host}}/proposals/0xf01c9b505ad8e00c4f774268bd1866d9088591a10332afcc7bcb1daaa5bae25e-0x9486A57A8989522A4d540CCE21910E9BC353A2d6-1"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "adabc31d-bcf3-4bca-8eb2-eafc091895fc",
+							"name": "get proposal by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{host}}/proposals/0xf01c9b505ad8e00c4f774268bd1866d9088591a10332afcc7bcb1daaa5bae25e-0x9486A57A8989522A4d540CCE21910E9BC353A2d6-1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Correlation-Id",
+									"value": "b4dd81d3-31ee-4745-a828-05c115f8b7bb"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self' https:"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=2592000; includeSubDomains"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1365"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Sep 2024 13:35:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"id\": \"0xf01c9b505ad8e00c4f774268bd1866d9088591a10332afcc7bcb1daaa5bae25e-0x9486A57A8989522A4d540CCE21910E9BC353A2d6-1\",\n    \"transactionHash\": \"0xf01c9b505ad8e00c4f774268bd1866d9088591a10332afcc7bcb1daaa5bae25e\",\n    \"blockNumber\": 5601668,\n    \"blockTimestamp\": 1711920792,\n    \"network\": \"ethereum-sepolia\",\n    \"pluginAddress\": \"0x9486A57A8989522A4d540CCE21910E9BC353A2d6\",\n    \"pluginSubdomain\": \"multisig\",\n    \"daoAddress\": \"0xdBD52951e4bF336E34f3266d07AF844Ab2b7D2d2\",\n    \"proposalIndex\": 1,\n    \"startDate\": 1711920792,\n    \"endDate\": 1713475920,\n    \"metadataUri\": \"ipfs://QmZirCPwQP1ut5Ex9ge9rEbGX6hXcphzbmAfdxW54aNitH\",\n    \"title\": \"What is $ZOOPI\",\n    \"description\": null,\n    \"summary\": \"Describe the use of $ZOOPI\",\n    \"resources\": [],\n    \"executed\": {\n        \"status\": false,\n        \"transactionHash\": null,\n        \"blockNumber\": null,\n        \"blockTimestamp\": null\n    },\n    \"actions\": [\n        {\n            \"inputData\": {\n                \"function\": \"updateMultisigSettings\",\n                \"contract\": \"Multisig\",\n                \"parameters\": [\n                    {\n                        \"name\": \"_multisigSettings\",\n                        \"type\": \"tuple\",\n                        \"value\": [\n                            true,\n                            \"1\"\n                        ],\n                        \"notice\": \"The new settings.\"\n                    }\n                ],\n                \"notice\": \"Updates the plugin settings.\",\n                \"textSignature\": \"updateMultisigSettings(tuple)\"\n            },\n            \"type\": \"UpdateMultiSigSettings\",\n            \"proposedSettings\": {\n                \"minApprovals\": \"1\"\n            }\n        }\n    ],\n    \"media\": {\n        \"header\": null,\n        \"logo\": null\n    },\n    \"metrics\": {\n        \"totalVotes\": 0,\n        \"missingVotes\": 0,\n        \"votesByOption\": []\n    },\n    \"creator\": {\n        \"address\": \"0x6fEdC5cB36D662008325A0130f0eabC2E09Cb434\",\n        \"ens\": null,\n        \"avatar\": null\n    },\n    \"settings\": {\n        \"onlyListed\": true,\n        \"minApprovals\": 1,\n        \"membersCount\": 1\n    }\n}"
+						}
+					]
 				}
 			],
 			"id": "5833211f-5278-4ec1-b272-8e5430e915b1",
@@ -2381,6 +2605,163 @@
 					},
 					"response": [
 						{
+							"id": "e55cfc31-cc02-401e-a72e-0a43ad8a22e5",
+							"name": "get assets",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/assets",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"assets"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "<string>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "<number>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": "<number>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "order",
+											"value": "<string>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "<string>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "startDateProp",
+											"value": "<string>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "endDateProp",
+											"value": "<string>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "startDate",
+											"value": "<Date | timestamp>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "endDate",
+											"value": "<Date | timestamp>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "network",
+											"value": "<Network>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "address",
+											"value": "<string>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "tokenAddress",
+											"value": "<string>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "daoId",
+											"value": "<daoId>",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Correlation-Id",
+									"value": "00e62c4f-615a-43a0-a4b5-d891e49d5c58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self' https:"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=2592000; includeSubDomains"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4986"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Sep 2024 13:35:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"metadata\": {\n        \"page\": 1,\n        \"pageSize\": 10,\n        \"totalPages\": 25,\n        \"totalRecords\": 245\n    },\n    \"data\": [\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"amount\": \"490\",\n            \"dao\": {\n                \"address\": \"0xeCDd40AF7b7434C974851798063B5ed243D4c648\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"ERC20\",\n                \"address\": \"0x0EB81B98823507B9cc9eCE5F4c242c7A7cCFF157\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x0eb81b98823507b9cc9ece5f4c242c7a7ccff157.png\",\n                \"name\": \"Bermuda DAO Voting Token\",\n                \"symbol\": \"BDVT\",\n                \"decimals\": 0,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            },\n            \"amountUsd\": \"0\"\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"amount\": \"4203927853881278536000\",\n            \"dao\": {\n                \"address\": \"0xFBB66BC799308435eD2a0e0C0ac3ad1D46749B7b\",\n                \"ens\": null,\n                \"avatar\": \"ipfs://QmdLj2ccWEiXKgCzoPzRiY8XSAck1Xm6UgRUYL7hgmSBZ6\"\n            },\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"ERC20\",\n                \"address\": \"0x23Ca3002706b71a440860E3cf8ff64679A00C9d7\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x23ca3002706b71a440860e3cf8ff64679a00c9d7.png\",\n                \"name\": \"Nation3\",\n                \"symbol\": \"NATION\",\n                \"decimals\": 18,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            },\n            \"amountUsd\": \"0E-15\"\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"amount\": \"95222800000000000\",\n            \"dao\": {\n                \"address\": \"0x817d99807042a08fBC63c792d5B6429639a5061c\",\n                \"ens\": null,\n                \"avatar\": \"ipfs://QmP6wxmyzpvRkv8b1T4wv43o3ckzww2WmN9aDk4du1cvCQ\"\n            },\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"native\",\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"logo\": \"https://www.datocms-assets.com/86369/1669619533-ethereum.png\",\n                \"name\": \"Ether\",\n                \"symbol\": \"ETH\",\n                \"decimals\": 18,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            },\n            \"amountUsd\": \"0E-7\"\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"amount\": \"5200000000000000000000\",\n            \"dao\": {\n                \"address\": \"0x5B98a0c38d3684644A9Ada0baaeAae452aE3267B\",\n                \"ens\": null,\n                \"avatar\": \"ipfs://QmVFTRW1KkaKAZXuFqNaU4HUkoEgND3hQ42549VKtPkEDv\"\n            },\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"ERC20\",\n                \"address\": \"0xdc1a36bc15d5255Bb7061ec78e735e5C4dA4Ce5e\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xdc1a36bc15d5255bb7061ec78e735e5c4da4ce5e.png\",\n                \"name\": \"DAI Coin\",\n                \"symbol\": \"DAI\",\n                \"decimals\": 18,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            },\n            \"amountUsd\": \"0E+2\"\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"amount\": \"9900000000000000\",\n            \"dao\": {\n                \"address\": \"0xECd8D882E7a42477352cc57F0003b0Ed237c9362\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"native\",\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"logo\": \"https://www.datocms-assets.com/86369/1669619533-ethereum.png\",\n                \"name\": \"Ether\",\n                \"symbol\": \"ETH\",\n                \"decimals\": 18,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            },\n            \"amountUsd\": \"0.0000\"\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"amount\": \"122110000000000000\",\n            \"dao\": {\n                \"address\": \"0x8285136DBB030658Deb29Ac7C172Ff83122ebEB2\",\n                \"ens\": null,\n                \"avatar\": \"ipfs://QmXmWTdRigoEsmSnTJ6NKjqG3hrxAqF8kMsYxDcy2ujxqm\"\n            },\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"native\",\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"logo\": \"https://www.datocms-assets.com/86369/1669619533-ethereum.png\",\n                \"name\": \"Ether\",\n                \"symbol\": \"ETH\",\n                \"decimals\": 18,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            },\n            \"amountUsd\": \"0.00000\"\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"amount\": \"10000000000000000000\",\n            \"dao\": {\n                \"address\": \"0xD818C26403121D97e5FA667C23d3267ec8EF81F3\",\n                \"ens\": null,\n                \"avatar\": \"ipfs://Qmaf6hJmhizLdqEWDGL6agJY6PaN7jAAHzNcbu5ZLPFkSJ\"\n            },\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x5B08305497fb3a087Fc582D45fcb648c98177c43\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x5b08305497fb3a087fc582d45fcb648c98177c43.png\",\n                \"name\": \"Sepolia Avalanche\",\n                \"symbol\": \"SAVL\",\n                \"decimals\": 18,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            },\n            \"amountUsd\": \"0E+1\"\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"amount\": \"50000000000000000\",\n            \"dao\": {\n                \"address\": \"0xD818C26403121D97e5FA667C23d3267ec8EF81F3\",\n                \"ens\": null,\n                \"avatar\": \"ipfs://Qmaf6hJmhizLdqEWDGL6agJY6PaN7jAAHzNcbu5ZLPFkSJ\"\n            },\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"native\",\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"logo\": \"https://www.datocms-assets.com/86369/1669619533-ethereum.png\",\n                \"name\": \"Ether\",\n                \"symbol\": \"ETH\",\n                \"decimals\": 18,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            },\n            \"amountUsd\": \"0.00\"\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"amount\": \"9576000000000000\",\n            \"dao\": {\n                \"address\": \"0xfB9E648d3d15C66FD523A44Ac053408e9aA316E6\",\n                \"ens\": null,\n                \"avatar\": \"ipfs://QmP6wxmyzpvRkv8b1T4wv43o3ckzww2WmN9aDk4du1cvCQ\"\n            },\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"native\",\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"logo\": \"https://www.datocms-assets.com/86369/1669619533-ethereum.png\",\n                \"name\": \"Ether\",\n                \"symbol\": \"ETH\",\n                \"decimals\": 18,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            },\n            \"amountUsd\": \"0.000000\"\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"amount\": \"212208842301297441\",\n            \"dao\": {\n                \"address\": \"0x5B98a0c38d3684644A9Ada0baaeAae452aE3267B\",\n                \"ens\": null,\n                \"avatar\": \"ipfs://QmVFTRW1KkaKAZXuFqNaU4HUkoEgND3hQ42549VKtPkEDv\"\n            },\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"native\",\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"logo\": \"https://www.datocms-assets.com/86369/1669619533-ethereum.png\",\n                \"name\": \"Ether\",\n                \"symbol\": \"ETH\",\n                \"decimals\": 18,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            },\n            \"amountUsd\": \"0E-18\"\n        }\n    ]\n}"
+						},
+						{
 							"id": "968c0220-2094-42fd-a57a-ec52e5072f50",
 							"name": "get assets with dao id",
 							"originalRequest": {
@@ -2505,634 +2886,6 @@
 			],
 			"id": "8b7c2f66-6a0e-4d02-a661-ee14eb52d675",
 			"description": "This endpoint retrieves a list of DAOs assets."
-		},
-		{
-			"name": "Settings",
-			"item": [
-				{
-					"name": "get settings",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "b355ab82-213a-4c92-b4c5-66aaa78e9603",
-								"exec": [
-									"pm.test(\"Response status code is 200\", function () {",
-									"    pm.response.to.have.status(200, \"Expected status code to be 200\");",
-									"});",
-									"",
-									"pm.test(\"Response time is less than 6000ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(6000, \"Expected response time to be less than 6000ms\");",
-									"});",
-									"",
-									"pm.test(\"Response has data array\", function () {",
-									"    const jsonData = pm.response.json();",
-									"    pm.expect(jsonData).to.have.property(\"data\").that.is.an(\"array\", \"Expected response to have a 'data' property that is an array\");",
-									"});",
-									"",
-									"pm.test(\"Each Settings object has correct properties and types\", function () {",
-									"    const data = pm.response.json().data;",
-									"    const expectedSettingsPropertyCount = 12; // id, network, fromTxHash, toTxHash, fromBlockNumber, toBlockNumber, daoAddress, pluginAddress, pluginSubdomain, settings, tokenAddress, token (optional)",
-									"",
-									"    data.forEach((settings, index) => {",
-									"        try {",
-									"            const actualPropertyCount = Object.keys(settings).length;",
-									"            const hasToken = settings.hasOwnProperty(\"token\");",
-									"            pm.expect(actualPropertyCount).to.equal(expectedSettingsPropertyCount - (hasToken ? 0 : 1), `Settings ${index + 1}: Expected ${expectedSettingsPropertyCount - (hasToken ? 0 : 1)} properties but found ${actualPropertyCount}`);",
-									"            ",
-									"            pm.expect(settings).to.have.property(\"id\").that.is.a(\"string\", `Settings ${index + 1}: 'id' should be a string`);",
-									"            pm.expect(settings).to.have.property(\"network\").that.is.a(\"string\", `Settings ${index + 1}: 'network' should be a string`);",
-									"            pm.expect(settings).to.have.property(\"fromTxHash\").that.is.a(\"string\", `Settings ${index + 1}: 'fromTxHash' should be a string`);",
-									"            pm.expect(settings).to.have.property(\"toTxHash\").that.satisfies(value => value === null || typeof value === \"string\", `Settings ${index + 1}: 'toTxHash' should be null or a string`);",
-									"            pm.expect(settings).to.have.property(\"fromBlockNumber\").that.is.a(\"number\", `Settings ${index + 1}: 'fromBlockNumber' should be a number`);",
-									"            pm.expect(settings).to.have.property(\"toBlockNumber\").that.satisfies(value => value === null || typeof value === \"number\", `Settings ${index + 1}: 'toBlockNumber' should be null or a number`);",
-									"            pm.expect(settings).to.have.property(\"daoAddress\").that.is.a(\"string\", `Settings ${index + 1}: 'daoAddress' should be a string`);",
-									"            pm.expect(settings).to.have.property(\"pluginAddress\").that.is.a(\"string\", `Settings ${index + 1}: 'pluginAddress' should be a string`);",
-									"            pm.expect(settings).to.have.property(\"pluginSubdomain\").that.is.a(\"string\", `Settings ${index + 1}: 'pluginSubdomain' should be a string`);",
-									"            pm.expect(settings).to.have.property(\"settings\").that.is.an(\"object\", `Settings ${index + 1}: 'settings' should be an object`);",
-									"            pm.expect(settings).to.have.property(\"tokenAddress\").that.satisfies(value => value === null || typeof value === \"string\", `Settings ${index + 1}: 'tokenAddress' should be null or a string`);",
-									"",
-									"            const pluginSettings = settings.settings;",
-									"",
-									"            if (settings.pluginSubdomain === \"multisig\" || settings.pluginSubdomain === \"multisigplugin\") {",
-									"                pm.expect(pluginSettings).to.have.property(\"minApprovals\").that.is.a(\"number\", `Settings ${index + 1}: 'settings.minApprovals' should be a number`);",
-									"                pm.expect(pluginSettings).to.have.property(\"onlyListed\").that.is.a(\"boolean\", `Settings ${index + 1}: 'settings.onlyListed' should be a boolean`);",
-									"            } else {",
-									"                pm.expect(pluginSettings).to.have.property(\"votingMode\").that.is.a(\"number\", `Settings ${index + 1}: 'settings.votingMode' should be a number`);",
-									"                pm.expect(pluginSettings).to.have.property(\"supportThreshold\").that.is.a(\"number\", `Settings ${index + 1}: 'settings.supportThreshold' should be a number`);",
-									"                pm.expect(pluginSettings).to.have.property(\"minParticipation\").that.is.a(\"number\", `Settings ${index + 1}: 'settings.minParticipation' should be a number`);",
-									"                pm.expect(pluginSettings).to.have.property(\"minDuration\").that.is.a(\"number\", `Settings ${index + 1}: 'settings.minDuration' should be a number`);",
-									"                pm.expect(pluginSettings).to.have.property(\"minProposerVotingPower\").that.is.a(\"string\", `Settings ${index + 1}: 'settings.minProposerVotingPower' should be a string`);",
-									"            }",
-									"",
-									"            if (hasToken) {",
-									"                const token = settings.token;",
-									"                pm.expect(token).to.have.property(\"network\").that.is.a(\"string\", `Settings ${index + 1}: 'token.network' should be a string`);",
-									"                pm.expect(token).to.have.property(\"type\").that.is.a(\"string\", `Settings ${index + 1}: 'token.type' should be a string`);",
-									"                pm.expect(token).to.have.property(\"address\").that.is.a(\"string\", `Settings ${index + 1}: 'token.address' should be a string`);",
-									"                pm.expect(token).to.have.property(\"logo\").that.satisfies(value => value === null || typeof value === \"string\", `Settings ${index + 1}: 'token.logo' should be null or a string`);",
-									"                pm.expect(token).to.have.property(\"name\").that.is.a(\"string\", `Settings ${index + 1}: 'token.name' should be a string`);",
-									"                pm.expect(token).to.have.property(\"symbol\").that.is.a(\"string\", `Settings ${index + 1}: 'token.symbol' should be a string`);",
-									"                pm.expect(token).to.have.property(\"decimals\").that.is.a(\"number\", `Settings ${index + 1}: 'token.decimals' should be a number`);",
-									"                pm.expect(token).to.have.property(\"totalSupply\").that.is.a(\"string\", `Settings ${index + 1}: 'token.totalSupply' should be a string`);",
-									"            }",
-									"        } catch (e) {",
-									"            console.error(`Error in Settings ${index + 1}: ${e.message}`, settings);",
-									"            throw new Error(`Settings ${index + 1}: Check the console for more details. ${e.message}`);",
-									"        }",
-									"    });",
-									"});",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "38c12f27-4372-4c01-8f12-be8a2dbf1eb0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{host}}/settings",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"settings"
-							],
-							"query": [
-								{
-									"key": "search",
-									"value": "<string>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "page",
-									"value": "<number>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "pageSize",
-									"value": "<number>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "order",
-									"value": "<string>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "sort",
-									"value": "<string>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "startDateProp",
-									"value": "<string>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "endDateProp",
-									"value": "<string>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "startDate",
-									"value": "<Date | timestamp>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "endDate",
-									"value": "<Date | timestamp>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "onlyActive",
-									"value": "<boolean>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "network",
-									"value": "<Network>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "daoAddress",
-									"value": "<string>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "pluginAddress",
-									"value": "<string>",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "daoId",
-									"value": "<daoId>",
-									"type": "text",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"id": "6855de6a-d4c9-4b6d-a06e-5353de04767d",
-							"name": "get settings",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{host}}/settings",
-									"host": [
-										"{{host}}"
-									],
-									"path": [
-										"settings"
-									],
-									"query": [
-										{
-											"key": "search",
-											"value": "0xDDfa944A93ec63c73dF500d282D0c2De741aD752",
-											"description": "Search by: permalink | daoAddress || creatorAddress || txHash || name || ens",
-											"disabled": true
-										},
-										{
-											"key": "page",
-											"value": "1",
-											"description": "Total Result per page",
-											"disabled": true
-										},
-										{
-											"key": "pageSize",
-											"value": "10",
-											"description": "Sort asc | desc",
-											"disabled": true
-										},
-										{
-											"key": "order",
-											"value": "desc",
-											"description": "any property returned by the data object",
-											"disabled": true
-										},
-										{
-											"key": "sort",
-											"value": "createdAt",
-											"disabled": true
-										},
-										{
-											"key": "onlyActive",
-											"value": "true",
-											"description": "Only active settings",
-											"disabled": true
-										},
-										{
-											"key": "network",
-											"value": "mainnet",
-											"disabled": true
-										},
-										{
-											"key": "daoAddress",
-											"value": "0xf3b4B314425251AfAA068E1e2c92D7e06D75a6F4",
-											"disabled": true
-										},
-										{
-											"key": "pluginAddress",
-											"value": "0x9C71365C9e548A7da11665C190dC3EEf0348340b",
-											"description": "Plugin Address",
-											"disabled": true
-										},
-										{
-											"key": "daoId",
-											"value": "ethereum-sepolia-0x452d22f3324C239325dE422710d41B909642365b",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Correlation-Id",
-									"value": "3eaf5a5f-76d2-404d-804c-1599ebd8d703"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "referrer-policy",
-									"value": "no-referrer"
-								},
-								{
-									"key": "x-content-type-options",
-									"value": "nosniff"
-								},
-								{
-									"key": "x-frame-options",
-									"value": "DENY"
-								},
-								{
-									"key": "content-security-policy",
-									"value": "default-src 'self' https:"
-								},
-								{
-									"key": "x-xss-protection",
-									"value": "1; mode=block"
-								},
-								{
-									"key": "strict-transport-security",
-									"value": "max-age=2592000; includeSubDomains"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "6527"
-								},
-								{
-									"key": "Date",
-									"value": "Mon, 24 Jun 2024 15:20:42 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"metadata\": {\n        \"page\": 1,\n        \"pageSize\": 10,\n        \"totalPages\": 572,\n        \"totalRecords\": 5711\n    },\n    \"data\": [\n        {\n            \"id\": \"0x67970a98874ea439d89992b82cd71058066da9b6761e3f8c877619ae8abb5dd1-ethereum-sepolia\",\n            \"network\": \"ethereum-sepolia\",\n            \"fromTxHash\": \"0x67970a98874ea439d89992b82cd71058066da9b6761e3f8c877619ae8abb5dd1\",\n            \"toTxHash\": null,\n            \"fromBlockNumber\": 5479486,\n            \"toBlockNumber\": null,\n            \"daoAddress\": \"0x987687e9F9823F27e1b0FBdaA9aAA9831e7D1073\",\n            \"pluginAddress\": \"0x03e703ebe80eb62A51BeC4dC90394c5E4F933D3A\",\n            \"pluginSubdomain\": \"token-voting\",\n            \"settings\": {\n                \"votingMode\": 1,\n                \"supportThreshold\": 500000,\n                \"minParticipation\": 150000,\n                \"minDuration\": 86400,\n                \"minProposerVotingPower\": \"1\"\n            },\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xD4d00d7ae7Cb7f70155A777D8D6d58ef2E867967\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xd4d00d7ae7cb7f70155a777d8d6d58ef2e867967.png\",\n                \"name\": \"Governance VanityTron.io\",\n                \"symbol\": \"GVANITYTRON.IO\",\n                \"decimals\": 0\n            }\n        },\n        {\n            \"id\": \"0x12ca456c96a578b4a5fd29f9a25348ce3c8192518b607ca2eb6b3966e38f629e-ethereum-sepolia\",\n            \"network\": \"ethereum-sepolia\",\n            \"fromTxHash\": \"0x12ca456c96a578b4a5fd29f9a25348ce3c8192518b607ca2eb6b3966e38f629e\",\n            \"toTxHash\": null,\n            \"fromBlockNumber\": 5721472,\n            \"toBlockNumber\": null,\n            \"daoAddress\": \"0xBe26Cd45eAe8a55e76118a62977593f26B923f0b\",\n            \"pluginAddress\": \"0x046fC741015f860862e04A15EafF51079862c83A\",\n            \"pluginSubdomain\": \"token-voting\",\n            \"settings\": {\n                \"votingMode\": 2,\n                \"supportThreshold\": 500000,\n                \"minParticipation\": 150000,\n                \"minDuration\": 172800,\n                \"minProposerVotingPower\": \"1e+19\"\n            },\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x1edE6567E41b2564c08EbEBaFf7f95ED64e0011A\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x1ede6567e41b2564c08ebebaff7f95ed64e0011a.png\",\n                \"name\": \"comander\",\n                \"symbol\": \"CMD\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"id\": \"0x5d7ba82eb2d72a265687b9804b72ba8b8c637f2d7a2f7c9eeffe7cafd5baea70-ethereum-sepolia\",\n            \"network\": \"ethereum-sepolia\",\n            \"fromTxHash\": \"0x5d7ba82eb2d72a265687b9804b72ba8b8c637f2d7a2f7c9eeffe7cafd5baea70\",\n            \"toTxHash\": null,\n            \"fromBlockNumber\": 5507353,\n            \"toBlockNumber\": null,\n            \"daoAddress\": \"0x7207388E886F247ae6BE1a3d6494E55947bA61D7\",\n            \"pluginAddress\": \"0x01239b4E29691BB81F9BAdF8525Ae744Cc7B83C1\",\n            \"pluginSubdomain\": \"token-voting\",\n            \"settings\": {\n                \"votingMode\": 1,\n                \"supportThreshold\": 530000,\n                \"minParticipation\": 150000,\n                \"minDuration\": 86400,\n                \"minProposerVotingPower\": \"1e+18\"\n            },\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x94Dc415a67974713aC04d97471B2B7D53efD2b63\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x94dc415a67974713ac04d97471b2b7d53efd2b63.png\",\n                \"name\": \"MintCoin\",\n                \"symbol\": \"MNT\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"id\": \"0x62cb6df69c69a52f9f5f735a5d384716f8a3599f9df9322041fb8623ea374c30-ethereum-sepolia\",\n            \"network\": \"ethereum-sepolia\",\n            \"fromTxHash\": \"0x62cb6df69c69a52f9f5f735a5d384716f8a3599f9df9322041fb8623ea374c30\",\n            \"toTxHash\": null,\n            \"fromBlockNumber\": 5486480,\n            \"toBlockNumber\": null,\n            \"daoAddress\": \"0xE951F3Ce0dDC97F015baD3B3811181f651C1cB12\",\n            \"pluginAddress\": \"0x03083925B56D80f6C3E2BbDD0e18277bd8D12c5E\",\n            \"pluginSubdomain\": \"multisig\",\n            \"settings\": {\n                \"minApprovals\": 1,\n                \"onlyListed\": true\n            },\n            \"token\": null\n        },\n        {\n            \"id\": \"0xe1501e9847d53dd99d245101bd2cdfa94c193ccc01c0a114974d360c2467011a-ethereum-sepolia\",\n            \"network\": \"ethereum-sepolia\",\n            \"fromTxHash\": \"0xe1501e9847d53dd99d245101bd2cdfa94c193ccc01c0a114974d360c2467011a\",\n            \"toTxHash\": null,\n            \"fromBlockNumber\": 5636517,\n            \"toBlockNumber\": null,\n            \"daoAddress\": \"0x79c1DE9a709760BA1c5c8Df3e0bC27Af005c5a5a\",\n            \"pluginAddress\": \"0x01851729dF7E28Ceef6788eae11Fb064226aD8D9\",\n            \"pluginSubdomain\": \"token-voting\",\n            \"settings\": {\n                \"votingMode\": 1,\n                \"supportThreshold\": 560000,\n                \"minParticipation\": 150000,\n                \"minDuration\": 86400,\n                \"minProposerVotingPower\": \"1e+18\"\n            },\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x91F2a2ad4844854733CCB58A32741810206763EF\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x91f2a2ad4844854733ccb58a32741810206763ef.png\",\n                \"name\": \"POPCOIN\",\n                \"symbol\": \"PPC\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"id\": \"0x479895832d63de2535a9570abef46e157b501c1c7dae27cd039b031c862ea440-ethereum-sepolia\",\n            \"network\": \"ethereum-sepolia\",\n            \"fromTxHash\": \"0x479895832d63de2535a9570abef46e157b501c1c7dae27cd039b031c862ea440\",\n            \"toTxHash\": null,\n            \"fromBlockNumber\": 5273526,\n            \"toBlockNumber\": null,\n            \"daoAddress\": \"0x26630Be0B43D0628885C00578d5F33AE4135f06B\",\n            \"pluginAddress\": \"0x010127A0bB7aC31E7FA653490ac7830E95164528\",\n            \"pluginSubdomain\": \"token-voting\",\n            \"settings\": {\n                \"votingMode\": 2,\n                \"supportThreshold\": 500000,\n                \"minParticipation\": 200000,\n                \"minDuration\": 3600,\n                \"minProposerVotingPower\": \"1e+18\"\n            },\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x1CcB00696e8AEcA0bd0842Fb687Ae05570f9c0f0\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x1ccb00696e8aeca0bd0842fb687ae05570f9c0f0.png\",\n                \"name\": \"ParaDAO Token\",\n                \"symbol\": \"PARAD\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"id\": \"0xd84c8ec61e7f71048d0b6ed143659455531b3599f42a15f20b4508b31276a088-ethereum-sepolia\",\n            \"network\": \"ethereum-sepolia\",\n            \"fromTxHash\": \"0xd84c8ec61e7f71048d0b6ed143659455531b3599f42a15f20b4508b31276a088\",\n            \"toTxHash\": null,\n            \"fromBlockNumber\": 5963813,\n            \"toBlockNumber\": null,\n            \"daoAddress\": \"0x827d8bc8293D29Dfa070776167e3e5187A8F3205\",\n            \"pluginAddress\": \"0x00470abAE886871a03c72cFbBb89A927330fbCe2\",\n            \"pluginSubdomain\": \"token-voting\",\n            \"settings\": {\n                \"votingMode\": 1,\n                \"supportThreshold\": 990000,\n                \"minParticipation\": 1000000,\n                \"minDuration\": 86400,\n                \"minProposerVotingPower\": \"1\"\n            },\n            \"token\": null\n        },\n        {\n            \"id\": \"0x52d297b7b3951cd9b69c6702924a0cd220f0ae3fe6a65f628002c9e213a00328-ethereum-sepolia\",\n            \"network\": \"ethereum-sepolia\",\n            \"fromTxHash\": \"0x52d297b7b3951cd9b69c6702924a0cd220f0ae3fe6a65f628002c9e213a00328\",\n            \"toTxHash\": null,\n            \"fromBlockNumber\": 5394134,\n            \"toBlockNumber\": null,\n            \"daoAddress\": \"0x98A090c34b18A11d354006DF9a037ece16022971\",\n            \"pluginAddress\": \"0x000b8e335bF9310fa7A417d45d18aBF31Ab0702F\",\n            \"pluginSubdomain\": \"multisig\",\n            \"settings\": {\n                \"minApprovals\": 1,\n                \"onlyListed\": true\n            },\n            \"token\": null\n        },\n        {\n            \"id\": \"0x537cda329bb9f738ef6fd0875c5e7104999b8bb079b3341eed9cbcae0efd8f91-ethereum-sepolia\",\n            \"network\": \"ethereum-sepolia\",\n            \"fromTxHash\": \"0x537cda329bb9f738ef6fd0875c5e7104999b8bb079b3341eed9cbcae0efd8f91\",\n            \"toTxHash\": null,\n            \"fromBlockNumber\": 5715945,\n            \"toBlockNumber\": null,\n            \"daoAddress\": \"0xDD57805be8D8aD22272d69F43036e764CBc1bfd1\",\n            \"pluginAddress\": \"0x00eAaB0a73d8a601fa5bbe03Abd04330F900bbDc\",\n            \"pluginSubdomain\": \"multisig\",\n            \"settings\": {\n                \"minApprovals\": 1,\n                \"onlyListed\": true\n            },\n            \"token\": null\n        },\n        {\n            \"id\": \"0x3991312479dee1dbffcc6e8c6ef999267a53918329373ae3d777aa4f835ba0c1-ethereum-sepolia\",\n            \"network\": \"ethereum-sepolia\",\n            \"fromTxHash\": \"0x3991312479dee1dbffcc6e8c6ef999267a53918329373ae3d777aa4f835ba0c1\",\n            \"toTxHash\": null,\n            \"fromBlockNumber\": 6072306,\n            \"toBlockNumber\": null,\n            \"daoAddress\": \"0x74E511e2c5A0a4c673bb517591739982A8B6B025\",\n            \"pluginAddress\": \"0x018e3E39AA236D9E43Dd465ed0E38cBAE769e4d3\",\n            \"pluginSubdomain\": \"multisig\",\n            \"settings\": {\n                \"minApprovals\": 1,\n                \"onlyListed\": true\n            },\n            \"token\": null\n        }\n    ]\n}"
-						},
-						{
-							"id": "6a28e9b3-cfc6-42bc-ac35-361c18679492",
-							"name": "get settings with daoId",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{host}}/settings?daoId=ethereum-sepolia-0x452d22f3324C239325dE422710d41B909642365b",
-									"host": [
-										"{{host}}"
-									],
-									"path": [
-										"settings"
-									],
-									"query": [
-										{
-											"key": "search",
-											"value": "0xDDfa944A93ec63c73dF500d282D0c2De741aD752",
-											"description": "Search by: permalink | daoAddress || creatorAddress || txHash || name || ens",
-											"disabled": true
-										},
-										{
-											"key": "page",
-											"value": "1",
-											"description": "Total Result per page",
-											"disabled": true
-										},
-										{
-											"key": "pageSize",
-											"value": "10",
-											"description": "Sort asc | desc",
-											"disabled": true
-										},
-										{
-											"key": "order",
-											"value": "desc",
-											"description": "any property returned by the data object",
-											"disabled": true
-										},
-										{
-											"key": "sort",
-											"value": "createdAt",
-											"disabled": true
-										},
-										{
-											"key": "onlyActive",
-											"value": "true",
-											"description": "Only active settings",
-											"disabled": true
-										},
-										{
-											"key": "network",
-											"value": "mainnet",
-											"disabled": true
-										},
-										{
-											"key": "daoAddress",
-											"value": "0xf3b4B314425251AfAA068E1e2c92D7e06D75a6F4",
-											"disabled": true
-										},
-										{
-											"key": "pluginAddress",
-											"value": "0x9C71365C9e548A7da11665C190dC3EEf0348340b",
-											"description": "Plugin Address",
-											"disabled": true
-										},
-										{
-											"key": "daoId",
-											"value": "ethereum-sepolia-0x452d22f3324C239325dE422710d41B909642365b"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Correlation-Id",
-									"value": "fc9e7b40-be89-4acb-b79f-2e92f18fe787"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "referrer-policy",
-									"value": "no-referrer"
-								},
-								{
-									"key": "x-content-type-options",
-									"value": "nosniff"
-								},
-								{
-									"key": "x-frame-options",
-									"value": "DENY"
-								},
-								{
-									"key": "content-security-policy",
-									"value": "default-src 'self' https:"
-								},
-								{
-									"key": "x-xss-protection",
-									"value": "1; mode=block"
-								},
-								{
-									"key": "strict-transport-security",
-									"value": "max-age=2592000; includeSubDomains"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "554"
-								},
-								{
-									"key": "Date",
-									"value": "Mon, 24 Jun 2024 15:20:52 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"metadata\": {\n        \"page\": 1,\n        \"pageSize\": 10,\n        \"totalPages\": 1,\n        \"totalRecords\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"0xd7f0f55f3d2a5acefbc3179b069b5b2214e7bbf6eb73388ef3b01c17ba4becbd-ethereum-sepolia\",\n            \"network\": \"ethereum-sepolia\",\n            \"fromTxHash\": \"0xd7f0f55f3d2a5acefbc3179b069b5b2214e7bbf6eb73388ef3b01c17ba4becbd\",\n            \"toTxHash\": null,\n            \"fromBlockNumber\": 6140718,\n            \"toBlockNumber\": null,\n            \"daoAddress\": \"0x452d22f3324C239325dE422710d41B909642365b\",\n            \"pluginAddress\": \"0x62a01A3FD2b0f65B8C25C8CaF4B2e3F560367481\",\n            \"pluginSubdomain\": \"multisig\",\n            \"settings\": {\n                \"minApprovals\": 1,\n                \"onlyListed\": true\n            },\n            \"token\": null\n        }\n    ]\n}"
-						}
-					]
-				},
-				{
-					"name": "get active setting by daoId",
-					"id": "006bc3b9-9a26-48bf-8ac0-1d1662b19285",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{host}}/settings/active/ethereum-sepolia-0x452d22f3324C239325dE422710d41B909642365b"
-					},
-					"response": [
-						{
-							"id": "4f896178-3e67-4dbe-8852-971cbe0ad62b",
-							"name": "get setting by transactionHash",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": "{{host}}/settings/active/ethereum-sepolia-0x452d22f3324C239325dE422710d41B909642365b"
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Correlation-Id",
-									"value": "236ec73b-c414-4c1b-bfff-73aa6e5758e4"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "referrer-policy",
-									"value": "no-referrer"
-								},
-								{
-									"key": "x-content-type-options",
-									"value": "nosniff"
-								},
-								{
-									"key": "x-frame-options",
-									"value": "DENY"
-								},
-								{
-									"key": "content-security-policy",
-									"value": "default-src 'self' https:"
-								},
-								{
-									"key": "x-xss-protection",
-									"value": "1; mode=block"
-								},
-								{
-									"key": "strict-transport-security",
-									"value": "max-age=2592000; includeSubDomains"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "462"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 20 Jun 2024 13:44:04 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"id\": \"0xd7f0f55f3d2a5acefbc3179b069b5b2214e7bbf6eb73388ef3b01c17ba4becbd-ethereum-sepolia\",\n    \"network\": \"ethereum-sepolia\",\n    \"fromTxHash\": \"0xd7f0f55f3d2a5acefbc3179b069b5b2214e7bbf6eb73388ef3b01c17ba4becbd\",\n    \"toTxHash\": null,\n    \"fromBlockNumber\": 6140718,\n    \"toBlockNumber\": null,\n    \"daoAddress\": \"0x452d22f3324C239325dE422710d41B909642365b\",\n    \"pluginAddress\": \"0x62a01A3FD2b0f65B8C25C8CaF4B2e3F560367481\",\n    \"pluginSubdomain\": \"multisig\",\n    \"settings\": {\n        \"minApprovals\": 1,\n        \"onlyListed\": true\n    }\n}"
-						}
-					]
-				},
-				{
-					"name": "get active setting by daoAddress Copy",
-					"id": "dda0de40-8f36-46b1-8a3c-cc82fa12a2ac",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{host}}/settings/active/ethereum-sepolia/0x987687e9F9823F27e1b0FBdaA9aAA9831e7D1073"
-					},
-					"response": [
-						{
-							"id": "798d7271-c8d5-4d28-bbb1-299b0d489c86",
-							"name": "get active setting by daoAddress Copy",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": "{{host}}/settings/active/ethereum-sepolia/0x987687e9F9823F27e1b0FBdaA9aAA9831e7D1073"
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Correlation-Id",
-									"value": "04305819-5191-4339-a887-f2afce65b619"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "referrer-policy",
-									"value": "no-referrer"
-								},
-								{
-									"key": "x-content-type-options",
-									"value": "nosniff"
-								},
-								{
-									"key": "x-frame-options",
-									"value": "DENY"
-								},
-								{
-									"key": "content-security-policy",
-									"value": "default-src 'self' https:"
-								},
-								{
-									"key": "x-xss-protection",
-									"value": "1; mode=block"
-								},
-								{
-									"key": "strict-transport-security",
-									"value": "max-age=2592000; includeSubDomains"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "811"
-								},
-								{
-									"key": "Date",
-									"value": "Mon, 24 Jun 2024 15:22:16 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"id\": \"0x67970a98874ea439d89992b82cd71058066da9b6761e3f8c877619ae8abb5dd1-ethereum-sepolia\",\n    \"network\": \"ethereum-sepolia\",\n    \"fromTxHash\": \"0x67970a98874ea439d89992b82cd71058066da9b6761e3f8c877619ae8abb5dd1\",\n    \"toTxHash\": null,\n    \"fromBlockNumber\": 5479486,\n    \"toBlockNumber\": null,\n    \"daoAddress\": \"0x987687e9F9823F27e1b0FBdaA9aAA9831e7D1073\",\n    \"pluginAddress\": \"0x03e703ebe80eb62A51BeC4dC90394c5E4F933D3A\",\n    \"pluginSubdomain\": \"token-voting\",\n    \"settings\": {\n        \"votingMode\": 1,\n        \"supportThreshold\": 500000,\n        \"minParticipation\": 150000,\n        \"minDuration\": 86400,\n        \"minProposerVotingPower\": \"1\"\n    },\n    \"token\": {\n        \"type\": \"GovernanceERC20\",\n        \"address\": \"0xD4d00d7ae7Cb7f70155A777D8D6d58ef2E867967\",\n        \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xd4d00d7ae7cb7f70155a777d8d6d58ef2e867967.png\",\n        \"name\": \"Governance VanityTron.io\",\n        \"symbol\": \"GVANITYTRON.IO\",\n        \"decimals\": 0\n    }\n}"
-						}
-					]
-				}
-			],
-			"id": "b3f3662a-d176-4a1a-b37b-305c46b3bb51",
-			"description": "This endpoint retrieves a list of DAOs settings."
 		},
 		{
 			"name": "Transactions",
@@ -3316,130 +3069,6 @@
 						}
 					},
 					"response": [
-						{
-							"id": "46619c78-8019-4269-a295-1b439699b0f8",
-							"name": "get transactions",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{host}}/transactions",
-									"host": [
-										"{{host}}"
-									],
-									"path": [
-										"transactions"
-									],
-									"query": [
-										{
-											"key": "search",
-											"value": "0xDDfa944A93ec63c73dF500d282D0c2De741aD752",
-											"disabled": true
-										},
-										{
-											"key": "page",
-											"value": "1",
-											"description": "Total Result per page",
-											"disabled": true
-										},
-										{
-											"key": "pageSize",
-											"value": "10",
-											"description": "Sort asc | desc",
-											"disabled": true
-										},
-										{
-											"key": "order",
-											"value": "desc",
-											"description": "any property returned by the data object",
-											"disabled": true
-										},
-										{
-											"key": "sort",
-											"value": "createdAt",
-											"disabled": true
-										},
-										{
-											"key": "network",
-											"value": "mainnet",
-											"disabled": true
-										},
-										{
-											"key": "daoAddress",
-											"value": "0xf3b4B314425251AfAA068E1e2c92D7e06D75a6F4",
-											"description": "Dao Address",
-											"disabled": true
-										},
-										{
-											"key": "category",
-											"value": "erc20",
-											"description": "external | internal | erc20 | erc721 | erc1155",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Correlation-Id",
-									"value": "507d8b1d-fa61-4a61-bdad-5333053d62c5"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "referrer-policy",
-									"value": "no-referrer"
-								},
-								{
-									"key": "x-content-type-options",
-									"value": "nosniff"
-								},
-								{
-									"key": "x-frame-options",
-									"value": "DENY"
-								},
-								{
-									"key": "content-security-policy",
-									"value": "default-src 'self' https:"
-								},
-								{
-									"key": "x-xss-protection",
-									"value": "1; mode=block"
-								},
-								{
-									"key": "strict-transport-security",
-									"value": "max-age=2592000; includeSubDomains"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "4720"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 20 Jun 2024 12:41:56 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"metadata\": {\n        \"page\": 1,\n        \"pageSize\": 10,\n        \"totalPages\": 43,\n        \"totalRecords\": 427\n    },\n    \"data\": [\n        {\n            \"transactionHash\": \"0xaa78a4fe4edb17b2fb575e9132bc2c354028e43cc2d0c29cc8db35cdb581cb5f\",\n            \"blockNumber\": 6141047,\n            \"network\": \"ethereum-sepolia\",\n            \"type\": \"withdraw\",\n            \"category\": \"erc20\",\n            \"fromAddress\": \"0x452d22f3324c239325de422710d41b909642365b\",\n            \"toAddress\": \"0xafb509213365bae569ddc1422d9c999eb1038e47\",\n            \"value\": \"10000\",\n            \"tokenAddress\": \"0x2902b792af43ea1481569bc35b62a31bb2c20e95\",\n            \"daoAddress\": \"0x452d22f3324C239325dE422710d41B909642365b\",\n            \"token\": {\n                \"address\": \"0x2902b792af43ea1481569bc35b62a31bb2c20e95\",\n                \"symbol\": \"FREE\",\n                \"name\": \"FREEthereum\",\n                \"type\": \"ERC20\",\n                \"logo\": null,\n                \"decimals\": 18,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            }\n        },\n        {\n            \"transactionHash\": \"0xed7379335e71ed358d96dfdf6d30447db2b8ea56f79bbc4e21c4232251da961a\",\n            \"blockNumber\": 6141027,\n            \"network\": \"ethereum-sepolia\",\n            \"type\": \"deposit\",\n            \"category\": \"erc20\",\n            \"fromAddress\": \"0xaf7e68bcb2fc7295492a00177f14f59b92814e70\",\n            \"toAddress\": \"0x452d22f3324c239325de422710d41b909642365b\",\n            \"value\": \"50000\",\n            \"tokenAddress\": \"0x2902b792af43ea1481569bc35b62a31bb2c20e95\",\n            \"daoAddress\": \"0x452d22f3324C239325dE422710d41B909642365b\",\n            \"token\": {\n                \"address\": \"0x2902b792af43ea1481569bc35b62a31bb2c20e95\",\n                \"symbol\": \"FREE\",\n                \"name\": \"FREEthereum\",\n                \"type\": \"ERC20\",\n                \"logo\": null,\n                \"decimals\": 18,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            }\n        },\n        {\n            \"transactionHash\": \"0xa12b4f75c799c476f208af5a38dfc5207f8b1bdfecdeef65c1790d8ed3f3de81\",\n            \"blockNumber\": 6140211,\n            \"network\": \"ethereum-sepolia\",\n            \"type\": \"withdraw\",\n            \"category\": \"internal\",\n            \"fromAddress\": \"0xd43c965b0359a98c78e69c6c767d0ccffdcdaf32\",\n            \"toAddress\": \"0x0724d72eb61e508d81ca701881f2248f092953bf\",\n            \"value\": \"0.01\",\n            \"tokenAddress\": null,\n            \"daoAddress\": \"0xD43c965b0359a98c78e69c6c767D0CCfFDCDAf32\",\n            \"token\": {}\n        },\n        {\n            \"transactionHash\": \"0x932863131dcc613955ac47b30ef7dd991fe4bcb04344bcadd0dc615e64f1dfaf\",\n            \"blockNumber\": 6140131,\n            \"network\": \"ethereum-sepolia\",\n            \"type\": \"deposit\",\n            \"category\": \"external\",\n            \"fromAddress\": \"0x0724d72eb61e508d81ca701881f2248f092953bf\",\n            \"toAddress\": \"0xd43c965b0359a98c78e69c6c767d0ccffdcdaf32\",\n            \"value\": \"0.01\",\n            \"tokenAddress\": null,\n            \"daoAddress\": \"0xD43c965b0359a98c78e69c6c767D0CCfFDCDAf32\",\n            \"token\": {}\n        },\n        {\n            \"transactionHash\": \"0x061e515cffaf703b6bf95f37e389af72343c02992fb7396c40c1fbfd377fe89a\",\n            \"blockNumber\": 6135792,\n            \"network\": \"ethereum-sepolia\",\n            \"type\": \"deposit\",\n            \"category\": \"erc20\",\n            \"fromAddress\": \"0x0000000000000000000000000000000000000000\",\n            \"toAddress\": \"0xbb928bfd90cccc8099522456d94c418c0278bad4\",\n            \"value\": \"0\",\n            \"tokenAddress\": \"0xc2ec21e8c152e643f386a635e99b56e208dcb292\",\n            \"daoAddress\": \"0xBB928BfD90CCCc8099522456d94c418C0278baD4\",\n            \"token\": {\n                \"address\": \"0xc2ec21e8c152e643f386a635e99b56e208dcb292\",\n                \"symbol\": \"DDT\",\n                \"name\": \"DAODAO TOKEN\",\n                \"type\": \"GovernanceERC20\",\n                \"logo\": null,\n                \"decimals\": 18,\n                \"priceChangeOnDayUsd\": \"0\",\n                \"priceUsd\": \"0\"\n            }\n        },\n        {\n            \"transactionHash\": \"0xfb7158832009c05493e215aedafcbca16de5e407e6b74d0208745a50dab6d28b\",\n            \"blockNumber\": 6135790,\n            \"network\": \"ethereum-sepolia\",\n            \"type\": \"deposit\",\n            \"category\": \"external\",\n            \"fromAddress\": \"0x41f93acb521fc15edf7228095daefcabe1a80792\",\n            \"toAddress\": \"0x7b619d1fea9e15e8b1cda5706e82a2f7b975f7d0\",\n            \"value\": \"0.0001\",\n            \"tokenAddress\": null,\n            \"daoAddress\": \"0x7b619d1fEa9e15E8B1cdA5706e82a2f7b975F7D0\",\n            \"token\": {}\n        },\n        {\n            \"transactionHash\": \"0x5bae96babc05533e279737b7da370c384538ff57f215582aa6c6147f13864234\",\n            \"blockNumber\": 6135696,\n            \"network\": \"ethereum-sepolia\",\n            \"type\": \"withdraw\",\n            \"category\": \"internal\",\n            \"fromAddress\": \"0xbb928bfd90cccc8099522456d94c418c0278bad4\",\n            \"toAddress\": \"0x19ddc76b6ea171e6c89e586907504753f040127b\",\n            \"value\": \"1e-13\",\n            \"tokenAddress\": null,\n            \"daoAddress\": \"0xBB928BfD90CCCc8099522456d94c418C0278baD4\",\n            \"token\": {}\n        },\n        {\n            \"transactionHash\": \"0x497b317bbbe83f0d728a1902c05fd2a1a2f2f1106a9f588e4569ac9e79934856\",\n            \"blockNumber\": 6135462,\n            \"network\": \"ethereum-sepolia\",\n            \"type\": \"deposit\",\n            \"category\": \"external\",\n            \"fromAddress\": \"0xe6c30ad5aee7ad22e9f39d51d67667587cdd05a1\",\n            \"toAddress\": \"0xbb928bfd90cccc8099522456d94c418c0278bad4\",\n            \"value\": \"0.000001\",\n            \"tokenAddress\": null,\n            \"daoAddress\": \"0xBB928BfD90CCCc8099522456d94c418C0278baD4\",\n            \"token\": {}\n        },\n        {\n            \"transactionHash\": \"0xe95fa3ddcf5a02c14b2cab67690dfa355cef5e6f88fd48ad204cbf1db1f94030\",\n            \"blockNumber\": 6135026,\n            \"network\": \"ethereum-sepolia\",\n            \"type\": \"withdraw\",\n            \"category\": \"internal\",\n            \"fromAddress\": \"0x471b48b067bd7f16f60a42c24dba673e437796b8\",\n            \"toAddress\": \"0xfff9976782d46cc05630d1f6ebab18b2324d6b14\",\n            \"value\": \"0.05\",\n            \"tokenAddress\": null,\n            \"daoAddress\": \"0x471B48B067BD7f16F60a42C24dBA673E437796B8\",\n            \"token\": {}\n        },\n        {\n            \"transactionHash\": \"0xbc85bc4e294e6fc07fa02469d6f59c959385de61b539e7bfafbc02e503228bae\",\n            \"blockNumber\": 6135005,\n            \"network\": \"ethereum-sepolia\",\n            \"type\": \"deposit\",\n            \"category\": \"external\",\n            \"fromAddress\": \"0x47e8d1407007d32c31e195cbea79353adfe2470b\",\n            \"toAddress\": \"0x471b48b067bd7f16f60a42c24dba673e437796b8\",\n            \"value\": \"0.2\",\n            \"tokenAddress\": null,\n            \"daoAddress\": \"0x471B48B067BD7f16F60a42C24dBA673E437796B8\",\n            \"token\": {}\n        }\n    ]\n}"
-						},
 						{
 							"id": "24cf0da3-964c-469a-a86e-27fb0eb5dca8",
 							"name": "get transactions with daoId",
