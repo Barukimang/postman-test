@@ -1739,7 +1739,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/votes?includeInfo=true",
+							"raw": "{{host}}/votes",
 							"host": [
 								"{{host}}"
 							],
@@ -1830,20 +1830,21 @@
 								},
 								{
 									"key": "includeInfo",
-									"value": "true"
+									"value": "true",
+									"disabled": true
 								}
 							]
 						}
 					},
 					"response": [
 						{
-							"id": "35ac565c-b0bf-4c9c-ac82-b11469064c29",
+							"id": "f3fc550b-078f-44e6-8186-0405c44ace14",
 							"name": "get votes",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{host}}/votes",
+									"raw": "{{host}}/votes?includeInfo=true",
 									"host": [
 										"{{host}}"
 									],
@@ -1854,99 +1855,87 @@
 										{
 											"key": "search",
 											"value": "<string>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "page",
 											"value": "<number>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "pageSize",
 											"value": "<number>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "order",
 											"value": "<string>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "sort",
 											"value": "<string>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "startDateProp",
 											"value": "<string>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "endDateProp",
 											"value": "<string>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "startDate",
 											"value": "<Date | timestamp>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "endDate",
 											"value": "<Date | timestamp>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "network",
 											"value": "<Network>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "address",
 											"value": "<string>",
 											"description": "memberAddress",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "daoAddress",
 											"value": "<string>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "tokenAddress",
 											"value": "<string>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "pluginAddress",
 											"value": "<string>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "daoId",
 											"value": "<daoId>",
-											"type": "text",
 											"disabled": true
 										},
 										{
 											"key": "proposalId",
-											"value": "<number>",
-											"type": "text",
+											"value": "<string>",
 											"disabled": true
+										},
+										{
+											"key": "includeInfo",
+											"value": "true"
 										}
 									]
 								}
@@ -1957,7 +1946,7 @@
 							"header": [
 								{
 									"key": "X-Correlation-Id",
-									"value": "38d3cf94-7dbf-41f9-be5c-ae6dba47e9be"
+									"value": "d83263b3-6579-4945-b485-58f6991acc28"
 								},
 								{
 									"key": "Access-Control-Allow-Origin",
@@ -1993,11 +1982,11 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "6462"
+									"value": "9963"
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 17 Jul 2024 00:38:59 GMT"
+									"value": "Wed, 04 Sep 2024 12:58:38 GMT"
 								},
 								{
 									"key": "Connection",
@@ -2010,7 +1999,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"metadata\": {\n        \"page\": 1,\n        \"pageSize\": 10,\n        \"totalPages\": 697,\n        \"totalRecords\": 6965\n    },\n    \"data\": [\n        {\n            \"transactionHash\": \"0x1ac48092cb2e34059ca1f8c8e126380b342c98686d6c963fccdfcffeeb2bcf9f\",\n            \"blockNumber\": 232900002,\n            \"blockTimestamp\": 1721156516,\n            \"network\": \"arbitrum-mainnet\",\n            \"daoAddress\": \"0x4e14C3AFb57184c39F004aDB12e51689f02fE67F\",\n            \"pluginAddress\": \"0xeaDce7d4AF43074B058554910091D227e67061FD\",\n            \"memberAddress\": \"0x5504E7AeA0cf0582f7db6fD9C810f3810425a6c2\",\n            \"proposalId\": 1,\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xF62Ccc4CD09b2D7Fd6b262FF6B30271970EBf621\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/42161/0xf62ccc4cd09b2d7fd6b262ff6b30271970ebf621.png\",\n                \"name\": \"Renew DAO Token\",\n                \"symbol\": \"RDAO\",\n                \"decimals\": 18\n            },\n            \"voteOption\": 2,\n            \"votingPower\": \"170000000000000000000000\"\n        },\n        {\n            \"transactionHash\": \"0xed7361843368de97897f4446aa1c5fd8f540595f9e0ab3c5af1d88b1502343c7\",\n            \"blockNumber\": 232879457,\n            \"blockTimestamp\": 1721151381,\n            \"network\": \"arbitrum-mainnet\",\n            \"daoAddress\": \"0x4e14C3AFb57184c39F004aDB12e51689f02fE67F\",\n            \"pluginAddress\": \"0xeaDce7d4AF43074B058554910091D227e67061FD\",\n            \"memberAddress\": \"0x6959c1ce1469F335C1849bE80fBF104ed2c9EBb5\",\n            \"proposalId\": 0,\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xF62Ccc4CD09b2D7Fd6b262FF6B30271970EBf621\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/42161/0xf62ccc4cd09b2d7fd6b262ff6b30271970ebf621.png\",\n                \"name\": \"Renew DAO Token\",\n                \"symbol\": \"RDAO\",\n                \"decimals\": 18\n            },\n            \"voteOption\": 3,\n            \"votingPower\": \"50000000000000000000000\"\n        },\n        {\n            \"transactionHash\": \"0xc0466f91591757022f20e25c37166ee84c01f9ac926f454d8b213cce49008e08\",\n            \"blockNumber\": 232855153,\n            \"blockTimestamp\": 1721145278,\n            \"network\": \"arbitrum-mainnet\",\n            \"daoAddress\": \"0x4e14C3AFb57184c39F004aDB12e51689f02fE67F\",\n            \"pluginAddress\": \"0xeaDce7d4AF43074B058554910091D227e67061FD\",\n            \"memberAddress\": \"0x6959c1ce1469F335C1849bE80fBF104ed2c9EBb5\",\n            \"proposalId\": 1,\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xF62Ccc4CD09b2D7Fd6b262FF6B30271970EBf621\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/42161/0xf62ccc4cd09b2d7fd6b262ff6b30271970ebf621.png\",\n                \"name\": \"Renew DAO Token\",\n                \"symbol\": \"RDAO\",\n                \"decimals\": 18\n            },\n            \"voteOption\": 2,\n            \"votingPower\": \"50000000000000000000000\"\n        },\n        {\n            \"transactionHash\": \"0x1eabf30258bfc848ff82c5b793e4855f32baf508c89e8e4448bd22d8964854d3\",\n            \"blockNumber\": 232842731,\n            \"blockTimestamp\": 1721142168,\n            \"network\": \"arbitrum-mainnet\",\n            \"daoAddress\": \"0xf1718E2b38A9c509002521d162BFb8d8CB3027eF\",\n            \"pluginAddress\": \"0x8C94ffb7f86c1E919bc82D430919C9B25Efa1db2\",\n            \"memberAddress\": \"0x42c9A3f034592C39028AEa70A6e69Fbc6cCf6C31\",\n            \"proposalId\": 2,\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x2538AF04F6005563BE4980B06a2bECcd26DA3B67\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/42161/0x2538af04f6005563be4980b06a2beccd26da3b67.png\",\n                \"name\": \"EthAdVentures\",\n                \"symbol\": \"EAV\",\n                \"decimals\": 18\n            },\n            \"voteOption\": 2,\n            \"votingPower\": \"10000000000000000000000\"\n        },\n        {\n            \"transactionHash\": \"0x117a1c75ece3c9c0cdc4857a6314717df3de8ba9eebe1baf9687d4824e656903\",\n            \"blockNumber\": 232473672,\n            \"blockTimestamp\": 1721049611,\n            \"network\": \"arbitrum-mainnet\",\n            \"daoAddress\": \"0xf1718E2b38A9c509002521d162BFb8d8CB3027eF\",\n            \"pluginAddress\": \"0x8C94ffb7f86c1E919bc82D430919C9B25Efa1db2\",\n            \"memberAddress\": \"0x42c9A3f034592C39028AEa70A6e69Fbc6cCf6C31\",\n            \"proposalId\": 1,\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x2538AF04F6005563BE4980B06a2bECcd26DA3B67\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/42161/0x2538af04f6005563be4980b06a2beccd26da3b67.png\",\n                \"name\": \"EthAdVentures\",\n                \"symbol\": \"EAV\",\n                \"decimals\": 18\n            },\n            \"voteOption\": 2,\n            \"votingPower\": \"10000000000000000000000\"\n        },\n        {\n            \"transactionHash\": \"0x572a16607cddc1d13207cbb81a0a6c27f8a5a856e500c4138b942933d2efd2e1\",\n            \"blockNumber\": 232473303,\n            \"blockTimestamp\": 1721049518,\n            \"network\": \"arbitrum-mainnet\",\n            \"daoAddress\": \"0xf1718E2b38A9c509002521d162BFb8d8CB3027eF\",\n            \"pluginAddress\": \"0x8C94ffb7f86c1E919bc82D430919C9B25Efa1db2\",\n            \"memberAddress\": \"0x42c9A3f034592C39028AEa70A6e69Fbc6cCf6C31\",\n            \"proposalId\": 0,\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x2538AF04F6005563BE4980B06a2bECcd26DA3B67\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/42161/0x2538af04f6005563be4980b06a2beccd26da3b67.png\",\n                \"name\": \"EthAdVentures\",\n                \"symbol\": \"EAV\",\n                \"decimals\": 18\n            },\n            \"voteOption\": 2,\n            \"votingPower\": \"10000000000000000000000\"\n        },\n        {\n            \"transactionHash\": \"0xcc8632bbd10c9640cfed98126dfa6b2599434c9635d72fceba244f45d8d5c8a0\",\n            \"blockNumber\": 232082690,\n            \"blockTimestamp\": 1720951670,\n            \"network\": \"arbitrum-mainnet\",\n            \"daoAddress\": \"0x88F57e7c75E21cDC8F41f06eA9fDdA25a0b55B07\",\n            \"pluginAddress\": \"0x7D2Af87D5F04b2D5F834135E3570B8B9AeD3AeBa\",\n            \"memberAddress\": \"0x5C0A054D830e8C36BE5D630969C7bb3EF9bae8f3\",\n            \"proposalId\": 41,\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x56FfA72934990A8AaE0A3cc7Ef04A32E7B8527C7\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/42161/0x56ffa72934990a8aae0a3cc7ef04a32e7b8527c7.png\",\n                \"name\": \"Governance ForumAIDAO\",\n                \"symbol\": \"GFAIDAO\",\n                \"decimals\": 18\n            },\n            \"voteOption\": 2,\n            \"votingPower\": \"4000000000000000000000000\"\n        },\n        {\n            \"transactionHash\": \"0x4c56ef8b5a8f9ada54f02d633f2018de42f53a84bf4fec79c268a48a4e8fd13e\",\n            \"blockNumber\": 230905315,\n            \"blockTimestamp\": 1720656687,\n            \"network\": \"arbitrum-mainnet\",\n            \"daoAddress\": \"0x9e0543845232d0b83272eeDa1a96BEa9b596FD1c\",\n            \"pluginAddress\": \"0x0207C58030CafFf9eFF4b3dEE82Bddc1e1571df5\",\n            \"memberAddress\": \"0x6bBd6a6F93328707773b45025AA56DCBa16B695F\",\n            \"proposalId\": 0,\n            \"votingPower\": null\n        },\n        {\n            \"transactionHash\": \"0x6e2221964ecd30aaba894c6979cfe176a48b2335123188e0df27b7cc0c8663d1\",\n            \"blockNumber\": 230045715,\n            \"blockTimestamp\": 1720441001,\n            \"network\": \"arbitrum-mainnet\",\n            \"daoAddress\": \"0x88F57e7c75E21cDC8F41f06eA9fDdA25a0b55B07\",\n            \"pluginAddress\": \"0x7D2Af87D5F04b2D5F834135E3570B8B9AeD3AeBa\",\n            \"memberAddress\": \"0x5C0A054D830e8C36BE5D630969C7bb3EF9bae8f3\",\n            \"proposalId\": 40,\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x56FfA72934990A8AaE0A3cc7Ef04A32E7B8527C7\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/42161/0x56ffa72934990a8aae0a3cc7ef04a32e7b8527c7.png\",\n                \"name\": \"Governance ForumAIDAO\",\n                \"symbol\": \"GFAIDAO\",\n                \"decimals\": 18\n            },\n            \"voteOption\": 2,\n            \"votingPower\": \"4000000000000000000000000\"\n        },\n        {\n            \"transactionHash\": \"0x905dea00e1bec3bd0e0f559961df3722daba92ec824ac5a1496371c7591dde3f\",\n            \"blockNumber\": 230033003,\n            \"blockTimestamp\": 1720437805,\n            \"network\": \"arbitrum-mainnet\",\n            \"daoAddress\": \"0x88F57e7c75E21cDC8F41f06eA9fDdA25a0b55B07\",\n            \"pluginAddress\": \"0x7D2Af87D5F04b2D5F834135E3570B8B9AeD3AeBa\",\n            \"memberAddress\": \"0x060d6f634aF86FeC140928153C930193C8975f13\",\n            \"proposalId\": 40,\n            \"token\": {\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x56FfA72934990A8AaE0A3cc7Ef04A32E7B8527C7\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/42161/0x56ffa72934990a8aae0a3cc7ef04a32e7b8527c7.png\",\n                \"name\": \"Governance ForumAIDAO\",\n                \"symbol\": \"GFAIDAO\",\n                \"decimals\": 18\n            },\n            \"voteOption\": 2,\n            \"votingPower\": \"2350000000000000000000000\"\n        }\n    ]\n}"
+							"body": "{\n    \"metadata\": {\n        \"page\": 1,\n        \"pageSize\": 10,\n        \"totalPages\": 129,\n        \"totalRecords\": 1281\n    },\n    \"data\": [\n        {\n            \"transactionHash\": \"0x825bab6b53aa4e9b7bbfd91fc58da69efa5e9f094d996259ae99958e042659ac\",\n            \"blockNumber\": 6626598,\n            \"blockTimestamp\": 1725386268,\n            \"network\": \"ethereum-sepolia\",\n            \"proposalIndex\": 1,\n            \"votingPower\": \"10000000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x953711B3414de413C8B3C8eCf07F692BfB923B95\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x953711b3414de413c8b3c8ecf07f692bfb923b95.png\",\n                \"name\": \"Rita\",\n                \"symbol\": \"RTD\",\n                \"decimals\": 18\n            },\n            \"member\": {\n                \"address\": \"0x956209a83939DA0d306ea2b06393E702E16fe6f8\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"proposal\": {\n                \"id\": \"0xbea3f1aaa89f5ac52d2afd5b968f9d86c576406ecbfaeb224ca822ffe93bcd13-0x573D8F4F94012cd2b33fd66949b0C990D2677141-1\",\n                \"transactionHash\": \"0xbea3f1aaa89f5ac52d2afd5b968f9d86c576406ecbfaeb224ca822ffe93bcd13\",\n                \"proposalIndex\": 1,\n                \"metadataUri\": \"ipfs://bafkreifgjagoclukxkfbmthgdzxylfzase65hfpm6fqniusi6bcfpbi4ny\",\n                \"title\": \"sent ETH\",\n                \"description\": null,\n                \"summary\": \"test proposal\",\n                \"resources\": [],\n                \"media\": {\n                    \"header\": null,\n                    \"logo\": null\n                }\n            }\n        },\n        {\n            \"transactionHash\": \"0xa367f6bb1702f5a0dd694bb17373ee7f5637d003c82267cd2d54cf1141f2fbd3\",\n            \"blockNumber\": 6626578,\n            \"blockTimestamp\": 1725385968,\n            \"network\": \"ethereum-sepolia\",\n            \"proposalIndex\": 0,\n            \"votingPower\": \"10000000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x953711B3414de413C8B3C8eCf07F692BfB923B95\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x953711b3414de413c8b3c8ecf07f692bfb923b95.png\",\n                \"name\": \"Rita\",\n                \"symbol\": \"RTD\",\n                \"decimals\": 18\n            },\n            \"member\": {\n                \"address\": \"0x956209a83939DA0d306ea2b06393E702E16fe6f8\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"proposal\": {\n                \"id\": \"0x88d831213153ed323da660b72b22e1f29dae95816a44326353da9eff1e61277d-0x573D8F4F94012cd2b33fd66949b0C990D2677141-0\",\n                \"transactionHash\": \"0x88d831213153ed323da660b72b22e1f29dae95816a44326353da9eff1e61277d\",\n                \"proposalIndex\": 0,\n                \"metadataUri\": \"ipfs://bafkreihr4fc3r2efxtijpe3hihht3vojwmo3dlmky674u4h2ubfehlwcsu\",\n                \"title\": \"sent ETH\",\n                \"description\": null,\n                \"summary\": \"test\",\n                \"resources\": [],\n                \"media\": {\n                    \"header\": null,\n                    \"logo\": null\n                }\n            }\n        },\n        {\n            \"transactionHash\": \"0x7a9763542f21c7d5c1a469ece49df576d13bf2d874f5cbcfde34db25ed847111\",\n            \"blockNumber\": 6623434,\n            \"blockTimestamp\": 1725342516,\n            \"network\": \"ethereum-sepolia\",\n            \"proposalIndex\": 0,\n            \"votingPower\": \"1000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x0E0766532cD6eED6464EA480DFf4A22Bd5040599\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x0e0766532cd6eed6464ea480dff4a22bd5040599.png\",\n                \"name\": \"Degital Asset Token\",\n                \"symbol\": \"DAT\",\n                \"decimals\": 18\n            },\n            \"member\": {\n                \"address\": \"0xdfC550d8beBdab398888E1A026448A5024666f42\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"proposal\": {\n                \"id\": \"0xee69110c58e66a1274bc1fb32e6cdc8cf67b0998748d24baed546ac8b12b9138-0x3d7c672F7904A88E6981a223407093357b00b2Ca-0\",\n                \"transactionHash\": \"0xee69110c58e66a1274bc1fb32e6cdc8cf67b0998748d24baed546ac8b12b9138\",\n                \"proposalIndex\": 0,\n                \"metadataUri\": \"ipfs://bafkreihwixwhehltqblq4fk7saen4qjkuujardv25hbrqmj5hprqcdr4a4\",\n                \"title\": \"お昼ごはん\",\n                \"description\": null,\n                \"summary\": \"お昼ごはん食べましたか？\",\n                \"resources\": [],\n                \"media\": {\n                    \"header\": null,\n                    \"logo\": null\n                }\n            }\n        },\n        {\n            \"transactionHash\": \"0xf850f7f871b53d2fd4d46be34129b8f25f4f0c572832ff5446138fd55c0fdb1d\",\n            \"blockNumber\": 6623401,\n            \"blockTimestamp\": 1725342108,\n            \"network\": \"ethereum-sepolia\",\n            \"proposalIndex\": 0,\n            \"votingPower\": \"1000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x0E0766532cD6eED6464EA480DFf4A22Bd5040599\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x0e0766532cd6eed6464ea480dff4a22bd5040599.png\",\n                \"name\": \"Degital Asset Token\",\n                \"symbol\": \"DAT\",\n                \"decimals\": 18\n            },\n            \"member\": {\n                \"address\": \"0x26f6682bdC25a8c23FF715DC2Ca91EC90aF6d8f8\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"proposal\": {\n                \"id\": \"0xee69110c58e66a1274bc1fb32e6cdc8cf67b0998748d24baed546ac8b12b9138-0x3d7c672F7904A88E6981a223407093357b00b2Ca-0\",\n                \"transactionHash\": \"0xee69110c58e66a1274bc1fb32e6cdc8cf67b0998748d24baed546ac8b12b9138\",\n                \"proposalIndex\": 0,\n                \"metadataUri\": \"ipfs://bafkreihwixwhehltqblq4fk7saen4qjkuujardv25hbrqmj5hprqcdr4a4\",\n                \"title\": \"お昼ごはん\",\n                \"description\": null,\n                \"summary\": \"お昼ごはん食べましたか？\",\n                \"resources\": [],\n                \"media\": {\n                    \"header\": null,\n                    \"logo\": null\n                }\n            }\n        },\n        {\n            \"transactionHash\": \"0x989ec31586adb1f24a9c52afdb671071890ee37ce34b1ca34cfbf9a3e6012c09\",\n            \"blockNumber\": 6622898,\n            \"blockTimestamp\": 1725335136,\n            \"network\": \"ethereum-sepolia\",\n            \"proposalIndex\": 0,\n            \"votingPower\": \"1000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x0E0766532cD6eED6464EA480DFf4A22Bd5040599\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x0e0766532cd6eed6464ea480dff4a22bd5040599.png\",\n                \"name\": \"Degital Asset Token\",\n                \"symbol\": \"DAT\",\n                \"decimals\": 18\n            },\n            \"member\": {\n                \"address\": \"0x46D03e9893e429864Bf263F9F935EC3a624432A5\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"proposal\": {\n                \"id\": \"0xee69110c58e66a1274bc1fb32e6cdc8cf67b0998748d24baed546ac8b12b9138-0x3d7c672F7904A88E6981a223407093357b00b2Ca-0\",\n                \"transactionHash\": \"0xee69110c58e66a1274bc1fb32e6cdc8cf67b0998748d24baed546ac8b12b9138\",\n                \"proposalIndex\": 0,\n                \"metadataUri\": \"ipfs://bafkreihwixwhehltqblq4fk7saen4qjkuujardv25hbrqmj5hprqcdr4a4\",\n                \"title\": \"お昼ごはん\",\n                \"description\": null,\n                \"summary\": \"お昼ごはん食べましたか？\",\n                \"resources\": [],\n                \"media\": {\n                    \"header\": null,\n                    \"logo\": null\n                }\n            }\n        },\n        {\n            \"transactionHash\": \"0x20bcf28cbe8d1835cfffba1fafb2146b086164bd43fc6ca4eb158fbb4ebe781b\",\n            \"blockNumber\": 6618833,\n            \"blockTimestamp\": 1725280032,\n            \"network\": \"ethereum-sepolia\",\n            \"proposalIndex\": 0,\n            \"votingPower\": \"10000000000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x87EF805dbf72d7974114a2275bE17A9414EAd577\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x87ef805dbf72d7974114a2275be17a9414ead577.png\",\n                \"name\": \"Freedom Cells\",\n                \"symbol\": \"FCL\",\n                \"decimals\": 18\n            },\n            \"member\": {\n                \"address\": \"0x6766837A3CC2A66b6410EE19e8aE8bBd24203372\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"proposal\": {\n                \"id\": \"0xc582986fc5a1749ca838bc581df0407af7ca8b250d3fb291db016cb8837adee3-0x3e5B6d964696155bD0cDdA75B08c91D12baECaB9-0\",\n                \"transactionHash\": \"0xc582986fc5a1749ca838bc581df0407af7ca8b250d3fb291db016cb8837adee3\",\n                \"proposalIndex\": 0,\n                \"metadataUri\": \"ipfs://bafkreia5lxjpdd5ksk42tb7lgat7blwjpou4hnasw5ybvxz2puhm6wzspu\",\n                \"title\": \"Jsou Vakcíny proti Covid 19 podvod?\",\n                \"description\": null,\n                \"summary\": \"Co si myslíte o proběhlé pandemii před 3 roky? \\n\",\n                \"resources\": [],\n                \"media\": {\n                    \"header\": null,\n                    \"logo\": null\n                }\n            }\n        },\n        {\n            \"transactionHash\": \"0x9cf497d4ab479ef37b33d2ca6d9ab14810633db252254cf50d879a5c8e2d3c06\",\n            \"blockNumber\": 6617528,\n            \"blockTimestamp\": 1725262308,\n            \"network\": \"ethereum-sepolia\",\n            \"proposalIndex\": 1,\n            \"votingPower\": \"10010000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x87e264C2E33690A7C9E365d27f9E9529701d959E\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x87e264c2e33690a7c9e365d27f9e9529701d959e.png\",\n                \"name\": \"Governance ILoveDAOs\",\n                \"symbol\": \"GILD\",\n                \"decimals\": 18\n            },\n            \"member\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"proposal\": {\n                \"id\": \"0x44f35e94ff3daf2314d3ad7aba9c2f0a2454244cf5fc7f8fdc2ba935637c941c-0x6F84727c5E5A20491fE0765D4931D89B5AA251B2-1\",\n                \"transactionHash\": \"0x44f35e94ff3daf2314d3ad7aba9c2f0a2454244cf5fc7f8fdc2ba935637c941c\",\n                \"proposalIndex\": 1,\n                \"metadataUri\": \"ipfs://bafkreibyhkqz3i3qoo5lht7mycvhhx6wxurrzwwztu7jyc5psrk4dg3dre\",\n                \"title\": \"Edit settings\",\n                \"description\": null,\n                \"summary\": \"Edit settings\",\n                \"resources\": [],\n                \"media\": {\n                    \"header\": null,\n                    \"logo\": null\n                }\n            }\n        },\n        {\n            \"transactionHash\": \"0xa37cedb8e602bb238bf365fb768c56c1891eee95da520d062e88cded750a06d6\",\n            \"blockNumber\": 6617521,\n            \"blockTimestamp\": 1725262212,\n            \"network\": \"ethereum-sepolia\",\n            \"proposalIndex\": 1,\n            \"votingPower\": null,\n            \"member\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"proposal\": {\n                \"id\": \"0x714695b6c80e3d72f4c1074c5b4836ba9e6aa8d29c5fd1077c5be404a27c081a-0xB900491bEd785EeA8531E122f1Cd318c6605b3C8-1\",\n                \"transactionHash\": \"0x714695b6c80e3d72f4c1074c5b4836ba9e6aa8d29c5fd1077c5be404a27c081a\",\n                \"proposalIndex\": 1,\n                \"metadataUri\": \"ipfs://bafkreibyhkqz3i3qoo5lht7mycvhhx6wxurrzwwztu7jyc5psrk4dg3dre\",\n                \"title\": \"Edit settings\",\n                \"description\": null,\n                \"summary\": \"Edit settings\",\n                \"resources\": [],\n                \"media\": {\n                    \"header\": null,\n                    \"logo\": null\n                }\n            }\n        },\n        {\n            \"transactionHash\": \"0x1be119cf8e9f1af30964183e7fac71d99d88d198ace324ac4e8fb50804cc72e8\",\n            \"blockNumber\": 6617514,\n            \"blockTimestamp\": 1725262128,\n            \"network\": \"ethereum-sepolia\",\n            \"proposalIndex\": 0,\n            \"votingPower\": null,\n            \"member\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"proposal\": {\n                \"id\": \"0x082ffca84e6082c48c766e975d8294c1f75599b5dd97f88a1335d882d5cb749a-0xB900491bEd785EeA8531E122f1Cd318c6605b3C8-0\",\n                \"transactionHash\": \"0x082ffca84e6082c48c766e975d8294c1f75599b5dd97f88a1335d882d5cb749a\",\n                \"proposalIndex\": 0,\n                \"metadataUri\": \"ipfs://bafkreibpcpzyv2nm66obldrsc5dj5fvg5mfuathpgp3krwx6ruleu2zbua\",\n                \"title\": \"Create signaling proposal\",\n                \"description\": \"<p>Create signaling proposal</p>\",\n                \"summary\": \"Create signaling proposal\",\n                \"resources\": [],\n                \"media\": {\n                    \"header\": null,\n                    \"logo\": null\n                }\n            }\n        },\n        {\n            \"transactionHash\": \"0xe9c4952a85731157dfdbc73bd7941769dbf155517099fe2b96ea55fe736c02d1\",\n            \"blockNumber\": 6617508,\n            \"blockTimestamp\": 1725262044,\n            \"network\": \"ethereum-sepolia\",\n            \"proposalIndex\": 3,\n            \"votingPower\": \"1000000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xB5F7292bb742c5A42d13Bf5e1CB0D03535Fd3b45\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xb5f7292bb742c5a42d13bf5e1cb0d03535fd3b45.png\",\n                \"name\": \"Token Based DAO new token\",\n                \"symbol\": \"TBDNT\",\n                \"decimals\": 18\n            },\n            \"member\": {\n                \"address\": \"0xE3852100ff1a69c2cfdB7848CdD5953A63f86a6F\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"proposal\": {\n                \"id\": \"0x63fb79b4341d3571bdc4a07dac288dfb501a67db32cb9aa872d8df707b59b4f4-0xe3Df893f1e7af70ab7c0b05d119307a7Ec80b7a1-3\",\n                \"transactionHash\": \"0x63fb79b4341d3571bdc4a07dac288dfb501a67db32cb9aa872d8df707b59b4f4\",\n                \"proposalIndex\": 3,\n                \"metadataUri\": \"ipfs://bafkreigcyzux5ukr55q7y562ab7q6umxa7sqp3gpqnnzyeooqugxuwcq4m\",\n                \"title\": \"Add member\",\n                \"description\": null,\n                \"summary\": \"Add member\",\n                \"resources\": [],\n                \"media\": {\n                    \"header\": null,\n                    \"logo\": null\n                }\n            }\n        }\n    ]\n}"
 						}
 					]
 				}
