@@ -1012,13 +1012,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/members/0xb0324aA0496e7440755ec6DC662744b87BAc9781",
+							"raw": "{{host}}/members/0x9A5E28A6EDCf2f7e050CfBEA0e762C0c48CD61cb?pluginAddress=0x5539cf04fEcC37c747F78D9200Adf7c8f17a9585",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"members",
-								"0xb0324aA0496e7440755ec6DC662744b87BAc9781"
+								"0x9A5E28A6EDCf2f7e050CfBEA0e762C0c48CD61cb"
 							],
 							"query": [
 								{
@@ -1095,9 +1095,8 @@
 								},
 								{
 									"key": "pluginAddress",
-									"value": "<string>",
-									"type": "text",
-									"disabled": true
+									"value": "0x5539cf04fEcC37c747F78D9200Adf7c8f17a9585",
+									"type": "text"
 								},
 								{
 									"key": "tokenAddress",
