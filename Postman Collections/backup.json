@@ -1498,7 +1498,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/delegates",
+							"raw": "{{host}}/delegates?address=0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759&daoAddress=0xB9785d55Dc7B58A727B5e1D1674840e6C050A5AB",
 							"host": [
 								"{{host}}"
 							],
@@ -1509,7 +1509,6 @@
 								{
 									"key": "search",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
@@ -1525,93 +1524,77 @@
 								{
 									"key": "order",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "sort",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "startDateProp",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "endDateProp",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "startDate",
 									"value": "<Date | timestamp>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "endDate",
 									"value": "<Date | timestamp>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "network",
 									"value": "<Network>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "address",
-									"value": "<string>",
-									"description": "Member Address",
-									"type": "text",
-									"disabled": true
+									"value": "0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759",
+									"description": "Member Address"
 								},
 								{
 									"key": "tokenAddress",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "daoAddress",
-									"value": "<string>",
-									"disabled": true
+									"value": "0xB9785d55Dc7B58A727B5e1D1674840e6C050A5AB"
 								},
 								{
 									"key": "pluginAddress",
 									"value": "<string>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "daoId",
 									"value": "<daoId>",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "type",
 									"value": "delegate",
 									"description": "delegate | tokenTransfer",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "side",
 									"value": "incoming",
 									"description": "incoming | outgoing",
-									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "excludeZeroAddress",
 									"value": "<boolean>",
-									"type": "text",
 									"disabled": true
 								}
 							]
@@ -1804,6 +1787,159 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"metadata\": {\n        \"page\": 1,\n        \"pageSize\": 10,\n        \"totalPages\": 166,\n        \"totalRecords\": 1655\n    },\n    \"data\": [\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x150c6cd0f177b99f2e4285a9b1f0fccb6bebcf124c7c5e64ba442c4ddbe4bf44\",\n            \"blockNumber\": 6630737,\n            \"blockTimestamp\": 1725445128,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0x3Eb470445Fb558f4925187D9deEC1BfF6cC124E8\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"9988000000000000000000\",\n            \"memberVotingPower\": \"9988000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xe03e616071BcC68C870d385AC6316B373634cc9D\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xe03e616071bcc68c870d385ac6316b373634cc9d.png\",\n                \"name\": \"GovHub\",\n                \"symbol\": \"GHT\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x150c6cd0f177b99f2e4285a9b1f0fccb6bebcf124c7c5e64ba442c4ddbe4bf44\",\n            \"blockNumber\": 6630737,\n            \"blockTimestamp\": 1725445128,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0xBD634F1A8f253Fee709d541164F4E93B32905BB7\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"10012000000000000000000\",\n            \"memberVotingPower\": \"10012000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xe03e616071BcC68C870d385AC6316B373634cc9D\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xe03e616071bcc68c870d385ac6316b373634cc9d.png\",\n                \"name\": \"GovHub\",\n                \"symbol\": \"GHT\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x150c6cd0f177b99f2e4285a9b1f0fccb6bebcf124c7c5e64ba442c4ddbe4bf44\",\n            \"blockNumber\": 6630737,\n            \"blockTimestamp\": 1725445128,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0xb51247ef6E3f077E3c2a4F03536Dddc4AC07e3dd\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"9972000000000000000000\",\n            \"memberVotingPower\": \"9972000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xe03e616071BcC68C870d385AC6316B373634cc9D\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xe03e616071bcc68c870d385ac6316b373634cc9d.png\",\n                \"name\": \"GovHub\",\n                \"symbol\": \"GHT\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x150c6cd0f177b99f2e4285a9b1f0fccb6bebcf124c7c5e64ba442c4ddbe4bf44\",\n            \"blockNumber\": 6630737,\n            \"blockTimestamp\": 1725445128,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0xc1d60f584879f024299DA0F19Cdb47B931E35b53\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"10013000000000000000000\",\n            \"memberVotingPower\": \"10013000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xe03e616071BcC68C870d385AC6316B373634cc9D\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xe03e616071bcc68c870d385ac6316b373634cc9d.png\",\n                \"name\": \"GovHub\",\n                \"symbol\": \"GHT\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x150c6cd0f177b99f2e4285a9b1f0fccb6bebcf124c7c5e64ba442c4ddbe4bf44\",\n            \"blockNumber\": 6630737,\n            \"blockTimestamp\": 1725445128,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0x9812cA6298dAE950798Bd4EE65009fC28D246F8E\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"10018000000000000000000\",\n            \"memberVotingPower\": \"10018000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xe03e616071BcC68C870d385AC6316B373634cc9D\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xe03e616071bcc68c870d385ac6316b373634cc9d.png\",\n                \"name\": \"GovHub\",\n                \"symbol\": \"GHT\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x150c6cd0f177b99f2e4285a9b1f0fccb6bebcf124c7c5e64ba442c4ddbe4bf44\",\n            \"blockNumber\": 6630737,\n            \"blockTimestamp\": 1725445128,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0x2dB75d8404144CD5918815A44B8ac3f4DB2a7FAf\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"9997000000000000000000\",\n            \"memberVotingPower\": \"9997000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xe03e616071BcC68C870d385AC6316B373634cc9D\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xe03e616071bcc68c870d385ac6316b373634cc9d.png\",\n                \"name\": \"GovHub\",\n                \"symbol\": \"GHT\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x15fab38215c0428e55e58735dd12c5a69ef7f2045385be70d63e18469c9b2267\",\n            \"blockNumber\": 6630348,\n            \"blockTimestamp\": 1725439344,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0xfDa2c859748937203045005eD0596D179144E60e\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"10000000000000000000\",\n            \"memberVotingPower\": \"10000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x770F2aC98cd90Ea18C886071eA98A1Cf5019c807\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x770f2ac98cd90ea18c886071ea98a1cf5019c807.png\",\n                \"name\": \"TEstToken\",\n                \"symbol\": \"TTOK\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0xd99424060f2d5739194a2ce07bbab857e9abbd501350e21c4fc93b7c27ef4556\",\n            \"blockNumber\": 6628584,\n            \"blockTimestamp\": 1725413748,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0x5d20C6560c87682Ab4c573CdF6C871E8dBc18c12\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"100000000000000000000\",\n            \"memberVotingPower\": \"100000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x854b3C289dAf295F890C3f3EC3Ea96cfFF628B98\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x854b3c289daf295f890c3f3ec3ea96cfff628b98.png\",\n                \"name\": \"contract security detection\",\n                \"symbol\": \"CSD\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x9a06f027818a99de3378cd614cc4b7f1922ceaab8d47d94fefb284303509029e\",\n            \"blockNumber\": 6626582,\n            \"blockTimestamp\": 1725386040,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0x308a0fD8E2C15cCf263A7d8B1F3BB92959d10058\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"100000000000000000000\",\n            \"memberVotingPower\": \"100000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x953711B3414de413C8B3C8eCf07F692BfB923B95\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x953711b3414de413c8b3c8ecf07f692bfb923b95.png\",\n                \"name\": \"Rita\",\n                \"symbol\": \"RTD\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x9f9a549a04cd747bdf630867beb61c089ad80efd74eb10aea4bed5971f6f554b\",\n            \"blockNumber\": 6626535,\n            \"blockTimestamp\": 1725385356,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0x956209a83939DA0d306ea2b06393E702E16fe6f8\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"10000000000000000000000\",\n            \"memberVotingPower\": \"10000000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x953711B3414de413C8B3C8eCf07F692BfB923B95\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x953711b3414de413c8b3c8ecf07f692bfb923b95.png\",\n                \"name\": \"Rita\",\n                \"symbol\": \"RTD\",\n                \"decimals\": 18\n            }\n        }\n    ]\n}"
+						},
+						{
+							"id": "7fd86366-3a73-43d2-b8f9-289471f7083a",
+							"name": "get delegates by member address and daoAddress",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/delegates?address=0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759&daoAddress=0xB9785d55Dc7B58A727B5e1D1674840e6C050A5AB",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"delegates"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "order",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "startDateProp",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "endDateProp",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "startDate",
+											"value": "<Date | timestamp>",
+											"disabled": true
+										},
+										{
+											"key": "endDate",
+											"value": "<Date | timestamp>",
+											"disabled": true
+										},
+										{
+											"key": "network",
+											"value": "<Network>",
+											"disabled": true
+										},
+										{
+											"key": "address",
+											"value": "0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759",
+											"description": "Member Address"
+										},
+										{
+											"key": "tokenAddress",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "daoAddress",
+											"value": "0xB9785d55Dc7B58A727B5e1D1674840e6C050A5AB"
+										},
+										{
+											"key": "pluginAddress",
+											"value": "<string>",
+											"disabled": true
+										},
+										{
+											"key": "daoId",
+											"value": "<daoId>",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "8",
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": "100",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Correlation-Id",
+									"value": "efd0611e-f473-402e-9c69-170fb458901e"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self' https:"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=2592000; includeSubDomains"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "7569"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Sep 2024 18:44:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"metadata\": {\n        \"page\": 1,\n        \"pageSize\": 10,\n        \"totalPages\": 4,\n        \"totalRecords\": 39\n    },\n    \"data\": [\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x505510cbde79674827614c9122a3ef4611ab826028f79e9a296fd668aa4dd424\",\n            \"blockNumber\": 6576513,\n            \"blockTimestamp\": 1724697684,\n            \"from\": {\n                \"address\": \"0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0xE3217A7790BB9bb60D4712B86E96B5f77AF7a747\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"tokenTransfer\",\n            \"amount\": \"111000000000000000000\",\n            \"memberBalance\": \"444000000000000000000\",\n            \"memberVotingPower\": \"0\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xfE6eF9ea58A631D438D2D78cB7e9e71265435c88\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfe6ef9ea58a631d438d2d78cb7e9e71265435c88.png\",\n                \"name\": \"Token Fun\",\n                \"symbol\": \"TF\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x505510cbde79674827614c9122a3ef4611ab826028f79e9a296fd668aa4dd424\",\n            \"blockNumber\": 6576513,\n            \"blockTimestamp\": 1724697684,\n            \"from\": {\n                \"address\": \"0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0xE3217A7790BB9bb60D4712B86E96B5f77AF7a747\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"outgoing\",\n            \"type\": \"tokenTransfer\",\n            \"amount\": \"111000000000000000000\",\n            \"memberBalance\": \"222000000000000000000\",\n            \"memberVotingPower\": \"0\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xfE6eF9ea58A631D438D2D78cB7e9e71265435c88\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfe6ef9ea58a631d438d2d78cb7e9e71265435c88.png\",\n                \"name\": \"Token Fun\",\n                \"symbol\": \"TF\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x10d595acb7721e2b553739625fed0758a324362642432d742d8b52daae7b0ac8\",\n            \"blockNumber\": 6576495,\n            \"blockTimestamp\": 1724697432,\n            \"from\": {\n                \"address\": \"0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0xd5fb864ACfD6BB2f72939f122e89fF7F475924f5\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"outgoing\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"333000000000000000000\",\n            \"memberVotingPower\": \"0\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xfE6eF9ea58A631D438D2D78cB7e9e71265435c88\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfe6ef9ea58a631d438d2d78cb7e9e71265435c88.png\",\n                \"name\": \"Token Fun\",\n                \"symbol\": \"TF\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0xe74c0c290e30e34e38b89bdcdec5a9bdf8ea372d28108dd3b6266c6339829592\",\n            \"blockNumber\": 6576489,\n            \"blockTimestamp\": 1724697348,\n            \"from\": {\n                \"address\": \"0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0xE3217A7790BB9bb60D4712B86E96B5f77AF7a747\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"tokenTransfer\",\n            \"amount\": \"333000000000000000000\",\n            \"memberBalance\": \"333000000000000000000\",\n            \"memberVotingPower\": \"333000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xfE6eF9ea58A631D438D2D78cB7e9e71265435c88\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfe6ef9ea58a631d438d2d78cb7e9e71265435c88.png\",\n                \"name\": \"Token Fun\",\n                \"symbol\": \"TF\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0xe74c0c290e30e34e38b89bdcdec5a9bdf8ea372d28108dd3b6266c6339829592\",\n            \"blockNumber\": 6576489,\n            \"blockTimestamp\": 1724697348,\n            \"from\": {\n                \"address\": \"0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0xE3217A7790BB9bb60D4712B86E96B5f77AF7a747\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"outgoing\",\n            \"type\": \"tokenTransfer\",\n            \"amount\": \"333000000000000000000\",\n            \"memberBalance\": \"333000000000000000000\",\n            \"memberVotingPower\": \"333000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xfE6eF9ea58A631D438D2D78cB7e9e71265435c88\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfe6ef9ea58a631d438d2d78cb7e9e71265435c88.png\",\n                \"name\": \"Token Fun\",\n                \"symbol\": \"TF\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0xe5920cae11b3a41b5908e1ebace1ee1cc7304d89d53baa72e558fa1df61cb396\",\n            \"blockNumber\": 6441166,\n            \"blockTimestamp\": 1722854088,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"1000000000000000000\",\n            \"memberVotingPower\": \"1000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xcB91200Bc89De598B78Ad7131debFFE063A0219c\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xcb91200bc89de598b78ad7131debffe063a0219c.png\",\n                \"name\": \"yes\",\n                \"symbol\": \"YES\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0xe5920cae11b3a41b5908e1ebace1ee1cc7304d89d53baa72e558fa1df61cb396\",\n            \"blockNumber\": 6441166,\n            \"blockTimestamp\": 1722854088,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"tokenTransfer\",\n            \"amount\": \"1000000000000000000\",\n            \"memberBalance\": \"1000000000000000000\",\n            \"memberVotingPower\": \"1000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xcB91200Bc89De598B78Ad7131debFFE063A0219c\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xcb91200bc89de598b78ad7131debffe063a0219c.png\",\n                \"name\": \"yes\",\n                \"symbol\": \"YES\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0xf2b18422d4b13103c51ad8c095311c808cf3a65279b79ceedbb3ee18a11a2b1a\",\n            \"blockNumber\": 5956276,\n            \"blockTimestamp\": 1716402072,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"1000000000000000000\",\n            \"memberVotingPower\": \"1000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x6407eC6C0a382146CB9dEf4a228412D6243d132e\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x6407ec6c0a382146cb9def4a228412d6243d132e.png\",\n                \"name\": \"lul\",\n                \"symbol\": \"LUL\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0xf2b18422d4b13103c51ad8c095311c808cf3a65279b79ceedbb3ee18a11a2b1a\",\n            \"blockNumber\": 5956276,\n            \"blockTimestamp\": 1716402072,\n            \"from\": {\n                \"address\": \"0x0000000000000000000000000000000000000000\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"tokenTransfer\",\n            \"amount\": \"1000000000000000000\",\n            \"memberBalance\": \"1000000000000000000\",\n            \"memberVotingPower\": \"1000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0x6407eC6C0a382146CB9dEf4a228412D6243d132e\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0x6407ec6c0a382146cb9def4a228412d6243d132e.png\",\n                \"name\": \"lul\",\n                \"symbol\": \"LUL\",\n                \"decimals\": 18\n            }\n        },\n        {\n            \"network\": \"ethereum-sepolia\",\n            \"transactionHash\": \"0x3c3eb37e37c3b12ecc79ed8250ecbe3a4fac13d68adf3296c5376ecd37c093d6\",\n            \"blockNumber\": 5908615,\n            \"blockTimestamp\": 1715786484,\n            \"from\": {\n                \"address\": \"0x455E3DeFBC6B48d9127CF6acc609F5cEA87ca750\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"to\": {\n                \"address\": \"0x455e3DEFBC6b48D9127CF6acC609F5cEa87cA759\",\n                \"ens\": null,\n                \"avatar\": null\n            },\n            \"side\": \"incoming\",\n            \"type\": \"delegate\",\n            \"amount\": \"0\",\n            \"memberBalance\": \"666000000000000000000\",\n            \"memberVotingPower\": \"666000000000000000000\",\n            \"token\": {\n                \"network\": \"ethereum-sepolia\",\n                \"type\": \"GovernanceERC20\",\n                \"address\": \"0xfE6eF9ea58A631D438D2D78cB7e9e71265435c88\",\n                \"logo\": \"https://logos.covalenthq.com/tokens/11155111/0xfe6ef9ea58a631d438d2d78cb7e9e71265435c88.png\",\n                \"name\": \"Token Fun\",\n                \"symbol\": \"TF\",\n                \"decimals\": 18\n            }\n        }\n    ]\n}"
 						},
 						{
 							"id": "8a062f2e-f20a-4e93-9d9c-9e9023c8e401",
