@@ -3032,7 +3032,7 @@
 									"            pm.expect(token).to.have.property(\"symbol\").that.is.a(\"string\", `Asset ${index + 1}: 'token.symbol' should be a string`);",
 									"            pm.expect(token).to.have.property(\"name\").that.is.a(\"string\", `Asset ${index + 1}: 'token.name' should be a string`);",
 									"            pm.expect(token).to.have.property(\"type\").that.is.a(\"string\", `Asset ${index + 1}: 'token.type' should be a string`);",
-									"            pm.expect(token).to.have.property(\"logo\").that.is.a(\"string\", `Asset ${index + 1}: 'token.logo' should be a string`);",
+									"            pm.expect(token).to.have.property(\"logo\").that.is.oneOf([null, 'string'], `Asset ${index + 1}: 'token.logo' should be either null or a string`);",
 									"            pm.expect(token).to.have.property(\"decimals\").that.is.a(\"number\", `Asset ${index + 1}: 'token.decimals' should be a number`);",
 									"            pm.expect(token).to.have.property(\"priceChangeOnDayUsd\").that.is.a(\"string\", `Asset ${index + 1}: 'token.priceChangeOnDayUsd' should be a string`);",
 									"            pm.expect(token).to.have.property(\"priceUsd\").that.is.a(\"string\", `Asset ${index + 1}: 'token.priceUsd' should be a string`);",
